@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD060109/PXD060109.sdrf.tsv",
+  "dataset": "PXD060109",
+  "related_artifacts": [
+    "datasets/PXD060109/README.md",
+    "datasets/PXD060109/evidence.json"
+  ],
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD060109"
+    },
+    {
+      "id": "pride_metadata",
+      "kind": "repository_metadata",
+      "location": "PRIDE project record: title, sampleProcessingProtocol, instruments, quantificationMethods, softwares"
+    },
+    {
+      "id": "files",
+      "kind": "archive_file_list",
+      "location": "PRIDE file list for PXD060109 (16 raw files)"
+    },
+    {
+      "id": "paper",
+      "kind": "publication",
+      "location": "https://doi.org/10.1038/s41467-025-62735-5 (Nat Commun 2025)"
+    }
+  ],
+  "claims": [
+    {
+      "location": "row count / file mapping",
+      "value": "16 raw -> 16 rows; 10 single-run organs + whole brain (2 replicates x 3 gel fractions)",
+      "source_ids": ["files"],
+      "evidence": "File names wt-mouse-{organ}-membrane.raw and wt-mouse-whole-brain-membrane-{1,2}_{m,o,u}.raw"
+    },
+    {
+      "location": "characteristics[organism part]",
+      "value": "whole brain, forebrain, cerebellum, heart, lung, liver, kidney, spleen, intestine, skeletal muscle, urinary bladder",
+      "source_ids": ["files", "pride_metadata"],
+      "evidence": "Organ token in file name; PRIDE organismParts consistent (file 'intenstine' = intestine)"
+    },
+    {
+      "location": "characteristics[developmental stage] / preparation",
+      "value": "adult (EFO:0001272); Na2CO3-extracted integral membrane fraction, in-gel trypsin (GeLC-MS)",
+      "source_ids": ["pride_metadata", "paper"],
+      "evidence": "sampleProcessingProtocol: 'Membranes ... isolated from adult mice', Na2CO3 pH 11 extraction, SDS-PAGE + in-gel tryptic digestion"
+    },
+    {
+      "location": "comment[instrument] (AMBIGUOUS)",
+      "value": "Q Exactive HF-X (MS:1002877) annotated for all rows; project also lists LTQ Orbitrap XL",
+      "source_ids": ["pride_metadata"],
+      "evidence": "PRIDE instruments = [Q Exactive HF-X, LTQ Orbitrap XL]; archive metadata does not map runs to instruments. Per-run instrument to be confirmed from paper/raw files"
+    },
+    {
+      "location": "comment[proteomics data acquisition method] / comment[label] / comment[cleavage agent details]",
+      "value": "Data-dependent acquisition (PRIDE:0000627); label free sample; Trypsin (MS:1001251); gel electrophoresis-based separation",
+      "source_ids": ["pride_metadata"],
+      "evidence": "PRIDE experimentTypes = Bottom-up / DDA; quantificationMethods = MS1 intensity LFQ; in-gel trypsin per protocol"
+    },
+    {
+      "location": "not available fields",
+      "value": "strain, age, sex, precursor/fragment mass tolerance",
+      "source_ids": ["pride_metadata"],
+      "evidence": "Not reported in archive metadata (wt = wild-type genotype, strain unspecified)"
+    }
+  ]
+}
