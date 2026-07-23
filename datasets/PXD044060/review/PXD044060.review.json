@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD044060/PXD044060.sdrf.tsv",
+  "artifact_sha256": "d923dd51accb26a1631fe479a9c9cf11df79aed5f23a57617ca7669fe57326f9",
+  "verdict": "PASS",
+  "summary": "Re-review after repair: ribosomal enrichment now encoded (cell part=ribosome GO:0005840; enrichment process=Enrichment PRIDE:0000585); age=4-6W matches Methods. 42/42 RAW→tissue maps independently verified via Xcalibur sample names.",
+  "reviewer_context": {
+    "independent": true,
+    "context": "fresh hook agent without producer transcript"
+  },
+  "evidence_manifest": "datasets/PXD044060/evidence.json",
+  "checks": {
+    "spec_compliance": {
+      "status": "pass",
+      "evidence": "Templates ms-proteomics+vertebrates v1.1.0; parse_sdrf -t ms-proteomics -t vertebrates --use_ols_cache_only exit 0 with strain warning only (C57BL/6J). characteristics[cell part] and enrichment process present on all 42 rows."
+    },
+    "ontology_integrity": {
+      "status": "pass",
+      "evidence": "GO:0005840 ribosome confirmed in go-basic.obo; PRIDE:0000585 Enrichment is_a EFO:0009090 in pride_cv.obo; 14 UBERON organism parts; camC/acetyl/oxM UNIMODs; Q Exactive HF MS:1002523; adult EFO:0001272."
+    },
+    "source_evidence": {
+      "status": "pass",
+      "evidence": "paper_text.txt Methods: sucrose-cushion ribosome purification; organs of 4–6 week-old C57BL/6J; mixed-sex except testis. Independent UTF-16le decode of all 42 sandbox/.../raw_heads/*.head recovers 190628_<Tissue>_<rep>_333ng with 0 mismatches to raw_tissue_map.tsv and SDRF."
+    },
+    "file_mapping": {
+      "status": "pass",
+      "evidence": "42 unique RAW files; file set identical to raw_tissue_map.tsv; 14 tissues × 3 bio-reps; uberon and replicate_label match SDRF with 0 mismatches."
+    },
+    "design_consistency": {
+      "status": "pass",
+      "evidence": "Organism-part-only factor; muscle/testis replicate labels 1,2,4 preserved as biological replicate; testis sex=male, others not available consistent with Methods."
+    },
+    "omission_safety": {
+      "status": "pass",
+      "evidence": "Prior omission of ribosomal enrichment corrected via cell part + enrichment process; material type=tissue retained (vocabulary-constrained). Age range 4-6W used rather than inventing a single week. No unsupported per-sample sex for non-testis tissues."
+    },
+    "deterministic_validation": {
+      "status": "pass",
+      "evidence": "parse_sdrf exit 0 (C57BL/6J warning); tools score 98/100 (age format consistency note). tools check OLS hallucination false positives under proxy; official validator cache path used for compliance."
+    }
+  },
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "ontology_integrity",
+      "location": "characteristics[enrichment process] all rows",
+      "message": "PRIDE:0000585 Enrichment is valid under EFO:0009090 but its PRIDE definition is PTM-centric; ribosomal specificity is carried by characteristics[cell part]=ribosome.",
+      "evidence": "pride_cv.obo def: Enrichment of specific post-translational modifications; paper Methods describe sucrose-cushion ribosome purification, not PTM enrichment."
+    },
+    {
+      "severity": "minor",
+      "category": "source_evidence",
+      "location": "characteristics[age]",
+      "message": "Age 4-6W is a cohort range (Methods); Results also say 6 week-old. tools score flags non-standard age token format.",
+      "evidence": "paper_text.txt lines ~214 and ~1012; tools score Consistency 83/100."
+    },
+    {
+      "severity": "minor",
+      "category": "ontology_integrity",
+      "location": "characteristics[strain or breed]",
+      "message": "C57BL/6J left as free text (validator warning; common pattern).",
+      "evidence": "parse_sdrf warning: Term C57BL/6J not found in ncbitaxon list."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD030983/PXD030983-tissues-proteome.sdrf.tsv",
+  "dataset": "PXD030983",
+  "related_artifacts": [
+    "datasets/PXD030983/PXD030983-tissues-phosphoproteome.sdrf.tsv",
+    "datasets/PXD030983/PXD030983-pdac-proteome.sdrf.tsv",
+    "datasets/PXD030983/PXD030983-pdac-phosphoproteome.sdrf.tsv"
+  ],
+  "sources": [
+    {"id": "pride", "kind": "repository", "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD030983"},
+    {"id": "paper", "kind": "publication", "location": "https://pubmed.ncbi.nlm.nih.gov/35710609/"},
+    {"id": "moesm4", "kind": "supplement", "location": "sandbox/PXD030983/MOESM4.xlsx"},
+    {"id": "mq_phospho_tissues", "kind": "archive_search", "location": "PRIDE MQ_1percent_FDR_PTR_phosphoPACiFIC.zip Tissues/mqpar.xml"},
+    {"id": "mq_phospho_pdac", "kind": "archive_search", "location": "PRIDE MQ_1percent_FDR_PTR_phosphoPACiFIC.zip mPDACs/mqpar.xml"},
+    {"id": "mq_proteomicsdb", "kind": "archive_search", "location": "PRIDE MQ_100percent_FDR_ProteomicsDB.zip per-tissue/cell-line mqpar.xml"},
+    {"id": "mq_repro", "kind": "archive_search", "location": "PRIDE MQ_Reproducibility_Tissues.zip mqpar.xml"}
+  ],
+  "claims": [
+    {
+      "location": "file split",
+      "value": "2207 raws = 1536 tissue proteome + 328 tissue phospho + 264 PDAC proteome + 66 PDAC phospho + 13 held-out",
+      "source_ids": ["pride", "mq_phospho_tissues", "mq_phospho_pdac", "mq_proteomicsdb"],
+      "evidence": "Filename patterns (_R##_ vs _U##_ vs SP3 vs SP3_Phospho) plus mqpar experiment labels"
+    },
+    {
+      "location": "tissues-proteome organism part (41 tissues)",
+      "value": "All 41 healthy tissues including previously missing 11",
+      "source_ids": ["mq_phospho_tissues", "moesm4"],
+      "evidence": "Tissues/mqpar.xml maps R-pattern raws to tissue experiments; MOESM4 Sample information"
+    },
+    {
+      "location": "drug exposure",
+      "value": "No drug-treated MS raws; drug responses are phenotypic only (MOESM10)",
+      "source_ids": ["pride", "paper"],
+      "evidence": "sampleProcessingProtocol and reporting summary: drug screen is viability assay on untreated PDAC proteome panel"
+    },
+    {
+      "location": "instruments",
+      "value": "Tissue QE HF; PDAC proteome HF-X; PDAC phospho Exploris 480",
+      "source_ids": ["pride"],
+      "evidence": "PRIDE sampleProcessingProtocol"
+    }
+  ],
+  "limitations": [
+    "13 raws held out (7 sORF/JPT standards + 6 misc 05070_*)",
+    "Murine PDAC line names are free text (not in CLO/Cellosaurus); cell-lines template omitted",
+    "Strain C57BL/6N free text",
+    "Tissue fractionation encoded as generic HPLC; paper specifies Acclaim Trinity P1 mixed-mode"
+  ]
+}

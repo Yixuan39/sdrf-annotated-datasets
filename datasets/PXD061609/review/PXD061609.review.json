@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD061609/PXD061609.sdrf.tsv",
+  "artifact_sha256": "5de70816f12a4a4c45ebf3fe50808c45f78918aa913e4313536b84c0cf42d716",
+  "verdict": "PASS",
+  "summary": "Independent review found no blocking or important issues. Figure 1A shows 18 TMTpro channels including ovaries/134C and testes/135; Methods '16 channels' text is inconsistent with the figure and 10-tissue design. SDRF correctly follows Figure 1A (72 KEY raws × 18 = 1296 rows).",
+  "reviewer_context": {
+    "independent": true,
+    "context": "fresh hook agent without producer transcript"
+  },
+  "evidence_manifest": "datasets/PXD061609/evidence.json",
+  "checks": {
+    "spec_compliance": {
+      "status": "pass",
+      "evidence": "parse_sdrf validate-sdrf -t ms-proteomics -t vertebrates --use_ols_cache_only: warnings only (C57BL/6J free text). Factor organism part only; SAX as sample preparation batch."
+    },
+    "ontology_integrity": {
+      "status": "pass",
+      "evidence": "UBERON parts for 10 tissues resolve; Orbitrap Eclipse MS:1003029; Lys-C+Trypsin; TMTpro UNIMOD:2016; camC/oxM present. Strain C57BL/6J free-text warning only."
+    },
+    "source_evidence": {
+      "status": "pass",
+      "evidence": "sandbox/PXD061609/figs/panelA_top.png shows Brain 126/127N … Spleen 133C/134N, Ovaries 134C, Testes 135 (18 channels). nihms.txt Methods says '16 channels' but Results list ten tissues including ovaries/testes with female-then-male pairing — SDRF matches Figure 1A + Results, not the Methods typo."
+    },
+    "file_mapping": {
+      "status": "pass",
+      "evidence": "KEY.xlsx 72 basenames all present in PRIDE files.json (75 raws); held-out ea12594b/ea12620b/ea12621b absent from KEY as claimed; 72 files × 18 labels = 1296 rows."
+    },
+    "design_consistency": {
+      "status": "pass",
+      "evidence": "Per-file label→tissue→sex mapping matches Figure 1A (female then male for paired tissues; ovary female 134C; testis male 135). Batches NoSAX/HighSalt/LowSalt × 24 fractions × 18 = 1296. Factor organism part only."
+    },
+    "omission_safety": {
+      "status": "pass",
+      "evidence": "Age/developmental stage correctly not available; 18-channel choice is figure-supported rather than fabricated; three *b reruns held out without invented mapping."
+    },
+    "deterministic_validation": {
+      "status": "pass",
+      "evidence": "parse_sdrf validate-sdrf exit 0 with strain warning; tools score 100/100."
+    }
+  },
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "provenance",
+      "location": "paper Methods vs Figure 1A",
+      "message": "Manuscript Methods say '16 channels' while Figure 1A and tissue list require 18; SDRF correctly prefers the figure.",
+      "evidence": "nihms.txt line ~223 'all 16 channels'; panelA_top.png labels through 134C and 135."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+id	label	reason	evidence	n_raw	n_tissues_or_organs	primary_factor_candidate	instrument	quant	priority
+PXD061609	include	Ten-tissue TMTpro abundance atlas; study aim is tissue-specific expression; organism part is the natural sole factor	PRIDE title/keywords Tissue-specific expression; 10 tissues listed in description	75	10	organism part	Orbitrap Eclipse	TMTpro	1
+PXD030983	include	Largest healthy multi-tissue mouse draft (41 tissues) plus PDAC cell-line panel; annotate tissue subset first with organism part factor	PRIDE description 41 healthy tissues; Nat Methods draft mouse proteome	2207	41 (+66 cell lines)	organism part (tissue subset)	QE HF/HF-X / Exploris 480	LFQ	1
+PXD044060	promoted_datasets	14 adult mouse organs; factor organism part; HF1→tissue from RAW Xcalibur sample names	PRIDE 42 RAW; map in sandbox/PXD044060/raw_tissue_map.tsv; promoted datasets/PXD044060/	42	14	organism part	Q Exactive HF	LFQ	2
+PXD002156	include	Tissue-specific glycolysis/gluconeogenesis proteomes; organism part is experimental contrast	PRIDE title tissue-specific pathways	18	multiple	organism part	Q Exactive	LFQ	2
+IPX0003625000	include	41-organ DIA tissue-characteristic expression atlas (Lu et al MCP); not PRIDE-hosted	EuropePMC PMC9562433 data availability iProX	unclear	41	organism part	unclear	DIA	2
+PXD021333	uncertain	20 organs/tissues but MRM assay panels; sex and strain also vary — not organism-part-only	PRIDE description 3 strains + male/female	38	20	organism part + sex + strain	Orbitrap Fusion	MRM	3
+PXD055942	uncertain	Tissue/brain-region atlas but primary aim is protein/phospho turnover (pSILAC), extra factors likely	PRIDE title turnover atlas	1232	multiple tissues + brain regions	organism part + turnover design	Fusion Lumos / QE	TMT/DIA	3
+PXD047296	exclude	Ten-organ atlas but age (4–20 mo) is a primary factor alongside organ	PRIDE title Adult to Aging; 4 life stages	400	10	organism part + age	Q Exactive HF	DIA	4
+PXD053154	exclude	Multi-organ aging + protein-restriction diet intervention; not tissue-expression-only	PRIDE title aging + protein restriction; 7026 raw	7026	41	age + diet + organ	Exploris/QE/timsTOF	mixed	4
+PXD080876	exclude	Companion DDA library for PXD053154 aging/diet study	PRIDE title DDA library for protein restriction aging	120	unclear	same as PXD053154	Exploris 480	DDA library	4
+PXD007288	exclude	SILAC PCP interactome across tissues; not expression atlas factor design	PRIDE description protein correlation profiling complexes	767	7	complex profiling	Q Exactive	SILAC PCP	4
+PXD022309	exclude	Same PCP design as PXD007288 (Heart/Liver/Lung/Kidney/Muscle/Thymus)	PRIDE description SILAC PCP	121	6	complex profiling	QE / Bruker	SILAC PCP	4
+PXD002896	exclude	Organ spectral library built to interpret plasma/sepsis, not tissue-expression study	PRIDE title plasma proteome DIA + organ libraries	156	organs+plasma	plasma/sepsis focus	Q Exactive	DIA	4

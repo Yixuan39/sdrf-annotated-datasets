@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD044060/PXD044060.sdrf.tsv",
+  "dataset": "PXD044060",
+  "status": "MAPPED",
+  "related_artifacts": [
+    "datasets/PXD044060/README.md",
+    "datasets/PXD044060/evidence.json",
+    "sandbox/PXD044060/raw_tissue_map.tsv"
+  ],
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD044060"
+    },
+    {
+      "id": "raw_heads",
+      "kind": "instrument_metadata",
+      "location": "sandbox/PXD044060/mzid_probe/raw_heads/",
+      "note": "First 2\u20133 MB of each HF1_*.raw; UTF-16le Xcalibur sample names"
+    },
+    {
+      "id": "map_tsv",
+      "kind": "derived_mapping",
+      "location": "sandbox/PXD044060/raw_tissue_map.tsv"
+    },
+    {
+      "id": "mzid",
+      "kind": "result_file",
+      "location": "sandbox/PXD044060/mzid_probe/EXPORT.mzid.gz",
+      "note": "Clean re-download; SpectraData paths lack tissue"
+    },
+    {
+      "id": "moesm8",
+      "kind": "supplement",
+      "location": "sandbox/PXD044060/MOESM8.xlsx"
+    },
+    {
+      "id": "paper",
+      "kind": "publication_manuscript",
+      "location": "sandbox/PXD044060/paper_text.txt"
+    },
+    {
+      "id": "px_xml",
+      "kind": "proteomexchange_xml",
+      "location": "sandbox/PXD044060/PXD044060.px.xml"
+    }
+  ],
+  "claims": [
+    {
+      "location": "comment[data file] \u00d7 organism part",
+      "value": "42/42 RAW files mapped via Xcalibur sample name 190628_<FrenchTissue>_<rep>_333ng",
+      "source_ids": [
+        "raw_heads",
+        "map_tsv"
+      ],
+      "evidence": "UTF-16le strings in RAW file headers; French tissue codes translated to UBERON terms aligned with PXD030983/PXD061609"
+    },
+    {
+      "location": "characteristics[material type] / enrichment",
+      "value": "tissue; assayed material is sucrose-cushion ribosomal fraction",
+      "source_ids": [
+        "paper",
+        "pride"
+      ],
+      "evidence": "Methods: Tissue sampling and ribosome purification by subcellular fractionation; material type constrained to fixed SDRF vocabulary"
+    },
+    {
+      "location": "factor value[organism part]",
+      "value": "14 tissues \u00d7 3 bio-reps",
+      "source_ids": [
+        "moesm8",
+        "paper",
+        "map_tsv"
+      ],
+      "evidence": "MOESM8 iBAQ columns and manuscript list match mapped tissues"
+    },
+    {
+      "location": "characteristics[sex]",
+      "value": "testis=male; others=not available",
+      "source_ids": [
+        "paper"
+      ],
+      "evidence": "WT C57BL/6J regardless of sex except testis; mixed-sex pools not assignable per RAW"
+    },
+    {
+      "location": "characteristics[age] / developmental stage",
+      "value": "6W; NT=adult;AC=EFO:0001272",
+      "source_ids": [
+        "paper"
+      ],
+      "evidence": "Methods: Organs and tissues of 4\u20136 week-old mice; SDRF age encoded as 6W (standard unit); title/abstract adult"
+    },
+    {
+      "location": "technical metadata",
+      "value": "Q Exactive HF; DDA; HCD; Trypsin; camC fixed; acetyl protein N-term + oxM variable; 10 ppm / 25 mmu",
+      "source_ids": [
+        "pride",
+        "paper"
+      ],
+      "evidence": "PRIDE sample/data processing protocols and manuscript MS methods"
+    },
+    {
+      "location": "EXPORT.mzid.gz SpectraData",
+      "value": "D:\\Data\\MGF\\RIBOSOMES\\190628_tissu\\HF1_XXXXXX.mgf \u2014 no tissue in path",
+      "source_ids": [
+        "mzid"
+      ],
+      "evidence": "Negative finding; mapping required RAW sample names"
+    },
+    {
+      "location": "MGF TITLE",
+      "value": "raw_file_identifier:HF1_XXXXXX only",
+      "source_ids": [
+        "raw_heads"
+      ],
+      "evidence": "MGF heads probed for five files; no tissue string"
+    }
+  ],
+  "limitations": [
+    "characteristics[material type] cannot encode 'ribosomal fraction' in fixed vocabulary; enrichment documented in source names and README",
+    "Muscle/testis Xcalibur replicate labels are 1,2,4 (kept in biological replicate)",
+    "Non-testis sex left not available (mixed-sex sampling)",
+    "Collision energy NCE not stated in PRIDE/paper methods used here \u2014 column omitted",
+    "Age encoded as 6W from 4\u20136 week cohort range in methods"
+  ],
+  "notes": [
+    "Added cell part ribosome GO:0005840 and enrichment CHMO:0002017 after adversarial rejection for omitted ribosomal enrichment."
+  ]
+}

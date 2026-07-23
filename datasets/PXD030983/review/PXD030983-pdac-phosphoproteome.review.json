@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD030983/PXD030983-pdac-phosphoproteome.sdrf.tsv",
+  "artifact_sha256": "c49467ca4ff5c32907a1b4d5f5a6bf6f828786847518e1809547bc1d398e232c",
+  "verdict": "PASS",
+  "summary": "Re-review after repair: prior blockers cleared. Mods are Carbamidomethyl/Oxidation/Acetyl/Phospho; templates ms-proteomics+vertebrates; vertebrate demographics present as not available for murine PDAC lines. 66 RAW files map cleanly.",
+  "reviewer_context": {
+    "independent": true,
+    "context": "fresh hook agent without producer transcript"
+  },
+  "evidence_manifest": "datasets/PXD030983/PXD030983.evidence.json",
+  "checks": {
+    "spec_compliance": {
+      "status": "pass",
+      "evidence": "comment[sdrf template]=ms-proteomics + vertebrates (v1.1.0) on all 66 rows; required vertebrate columns present including developmental stage/age/sex/strain; parse_sdrf -t ms-proteomics -t vertebrates --use_ols_cache_only: Everything seems to be fine (exit 0)."
+    },
+    "ontology_integrity": {
+      "status": "pass",
+      "evidence": "Unique controlled mods UNIMOD:4/35/1/21 with Fixed/Variable flags; IMAC PRIDE:0000587; Exploris 480 MS:1003028; MONDO:0005184 disease; NCBITaxon:10090; UBERON:0001264 pancreas. Free-text cell line names documented as not in CLO/Cellosaurus."
+    },
+    "source_evidence": {
+      "status": "pass",
+      "evidence": "phospho_mPDACs_mqpar.xml fixed=Carbamidomethyl (C); variable includes Oxidation (M), Acetyl (Protein N-term), Phospho (STY); summary Variable modifications column matches; demographics not available appropriate for cell-line panel without reported age/sex/strain; instrument Exploris 480 + Fe3+-IMAC per README/project split."
+    },
+    "file_mapping": {
+      "status": "pass",
+      "evidence": "66 unique RAW files; 0 mismatches vs sandbox/PXD030983/pdac_phospho_raw_map_clean.tsv cell_line mapping; all 66 present in pride_files.json (non-split SP3_Phospho deposited; Split_* are MQ internal only)."
+    },
+    "design_consistency": {
+      "status": "pass",
+      "evidence": "66 lines × 1 fraction × LFQ; factor value[cell line] equals characteristics[cell line]; bio/tech replicate=1; no duplicate data files."
+    },
+    "omission_safety": {
+      "status": "pass",
+      "evidence": "Prior 4× Phospho redundancy removed; camC/ox/acetyl restored; no unsupported demographic invention (not available). cell-lines template omission justified by free-text murine PDAC names."
+    },
+    "deterministic_validation": {
+      "status": "pass",
+      "evidence": "parse_sdrf validate-sdrf -t ms-proteomics -t vertebrates --use_ols_cache_only exit 0; tools score 100/100. tools check exit 1 from OLS network/proxy false-positive hallucination flags on known terms; not treated as artifact defects."
+    }
+  },
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "ontology_integrity",
+      "location": "characteristics[cell line] / factor value[cell line] all rows",
+      "message": "Murine PDAC line identifiers remain free text (no Cellosaurus/CLO accessions).",
+      "evidence": "Documented in PXD030983.evidence.json limitations; matches sibling pdac-proteome pattern."
+    }
+  ]
+}
