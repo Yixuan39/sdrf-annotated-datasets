@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD005691/PXD005691.sdrf.tsv",
+  "dataset": "PXD005691",
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD005691"
+    },
+    {
+      "id": "pride_files",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/ws/archive/v3/projects/PXD005691/files/all"
+    },
+    {
+      "id": "paper",
+      "kind": "publication",
+      "location": "https://doi.org/10.1101/gr.213694.116"
+    },
+    {
+      "id": "paper_pmc",
+      "kind": "publication",
+      "location": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5495078/"
+    }
+  ],
+  "claims": [
+    {
+      "location": "characteristics[organism]",
+      "value": "Drosophila melanogaster (NCBITaxon:7227)",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE organism"
+    },
+    {
+      "location": "row/file mapping",
+      "value": "68 raw across the full life cycle (embryo 0-20 h ranges, larva L1/L2/L3, pupa P1-P5, adult F/vF female+male); developmental stage decoded from file-name stage tokens",
+      "source_ids": [
+        "pride_files",
+        "paper"
+      ],
+      "evidence": "file names / deposited samples_mapping.tsv"
+    },
+    {
+      "location": "technical metadata",
+      "value": "Q Exactive (MS:1001911); label-free DDA; Trypsin; Carbamidomethyl (fixed), Oxidation + Acetyl N-term (variable); MaxQuant",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE instruments/software"
+    }
+  ],
+  "limitations": [
+    "strain not stated in file names/abstract -> not available"
+  ]
+}

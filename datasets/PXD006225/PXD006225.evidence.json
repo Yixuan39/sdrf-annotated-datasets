@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD006225/PXD006225.sdrf.tsv",
+  "dataset": "PXD006225",
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD006225"
+    },
+    {
+      "id": "pride_files",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/ws/archive/v3/projects/PXD006225/files/all"
+    },
+    {
+      "id": "paper",
+      "kind": "publication",
+      "location": "https://doi.org/10.15252/msb.20177663"
+    },
+    {
+      "id": "paper_pmc",
+      "kind": "publication",
+      "location": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5615924/"
+    }
+  ],
+  "claims": [
+    {
+      "location": "characteristics[organism]",
+      "value": "Drosophila melanogaster (NCBITaxon:7227)",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE organism"
+    },
+    {
+      "location": "row/file mapping",
+      "value": "92 raw mapped to tissue (brain/gut/fat body/thorax) and genotype via the deposited samples_mapping.tsv; HighRes files annotated as technical replicate 2",
+      "source_ids": [
+        "pride_files",
+        "paper"
+      ],
+      "evidence": "file names / deposited samples_mapping.tsv"
+    },
+    {
+      "location": "technical metadata",
+      "value": "Q Exactive (MS:1001911); label-free DDA; Trypsin; Carbamidomethyl (fixed), Oxidation + Acetyl N-term (variable); MaxQuant",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE instruments/software"
+    }
+  ],
+  "limitations": [
+    "genotype captured; Dahomey (wDah) background is warning-level vs NCBITaxon"
+  ]
+}
