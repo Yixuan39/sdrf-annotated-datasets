@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD068793/PXD068793.sdrf.tsv",
+  "dataset": "PXD068793",
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD068793"
+    }
+  ],
+  "claims": [
+    {
+      "location": "characteristics[organism]",
+      "value": "Sus scrofa domesticus (NCBITaxon:9825), Sinclair Nanopig",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE title 'Sinclair Nanopig model'"
+    },
+    {
+      "location": "row/file mapping",
+      "value": "202 individually-zipped .d raw across 18 organs in two designs: 90 sex-resolved (Male/Female x3 reps) + 112 pooled Male+Female hpH-fractionated (HPH1-8)",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "file names {N}_{Tissue}_{Sex}{rep}_{id}.d.zip and {Tissue}_Male_Female_HPH{n}_{id}.d.zip"
+    },
+    {
+      "location": "technical metadata",
+      "value": "timsTOF Pro 2 (MS:1003230); DDA; label-free; Trypsin; Carbamidomethyl+Oxidation; pooled sets hpH-fractionated",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE instruments"
+    }
+  ],
+  "limitations": [
+    "'Sinclair Nanopig' is a free-text breed (warning-level vs NCBITaxon)",
+    "subregion tokens (Heart_LV, Kidney_cortex, Liver_LLM, Lung_LLU, *_Duo) mapped to LV / kidney / liver / lung / duodenum",
+    "preliminary model dataset; age not stated -> adult inferred"
+  ]
+}
