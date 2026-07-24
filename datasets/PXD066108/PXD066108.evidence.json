@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD066108/PXD066108.sdrf.tsv",
+  "dataset": "PXD066108",
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD066108"
+    },
+    {
+      "id": "pride_files",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/ws/archive/v3/projects/PXD066108/files/all"
+    },
+    {
+      "id": "metadata",
+      "kind": "repository",
+      "location": "deposited {Tissue}_metadata.tsv (animal id -> age/type) for all 30 tissues"
+    },
+    {
+      "id": "paper",
+      "kind": "publication",
+      "location": "https://doi.org/10.1038/s41592-025-02912-y"
+    }
+  ],
+  "claims": [
+    {
+      "location": "characteristics[organism]",
+      "value": "Macaca mulatta (NCBITaxon:9544)",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE organism"
+    },
+    {
+      "location": "row/file mapping",
+      "value": "481 raw = 30 tissues x aging female rhesus macaques (17 animals); tissue from file-name prefix, animal X-id -> age(years)+class from deposited per-tissue metadata.tsv",
+      "source_ids": [
+        "pride_files",
+        "metadata"
+      ],
+      "evidence": "file names {Tissue}_FPEP{id}_X{animal}.raw joined to metadata"
+    },
+    {
+      "location": "characteristics[sex]/[age]/[developmental stage]",
+      "value": "female; age 3/7/8/14/23/25/27 years; Juvenile->juvenile stage else adult (classes Juvenile/Young_adult/Middle_aged/Elderly)",
+      "source_ids": [
+        "metadata"
+      ],
+      "evidence": "per-tissue metadata.tsv type+age; study of aging FEMALE macaques"
+    },
+    {
+      "location": "technical metadata",
+      "value": "Q Exactive HF (MS:1002523); DIA (PRIDE:0000450); label-free; Trypsin; Carbamidomethyl+Oxidation",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE instruments/experimentTypes"
+    }
+  ],
+  "limitations": [
+    "some tissues sampled in fewer animals (13-17 of 17); brain-region and vessel terms use best-available UBERON/BTO"
+  ]
+}
