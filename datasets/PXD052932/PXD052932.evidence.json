@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD052932/PXD052932.sdrf.tsv",
+  "dataset": "PXD052932",
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD052932"
+    },
+    {
+      "id": "overview",
+      "kind": "repository",
+      "location": "deposited overview_files_data_citation_1_canine_20240604.xlsx"
+    },
+    {
+      "id": "zip_cd",
+      "kind": "repository",
+      "location": "raw .d filenames recovered from the ZIP64 central directory of RawData_timsTOF_tissue_{PAC,STrap}_DDA.zip (remote range read)"
+    }
+  ],
+  "claims": [
+    {
+      "location": "characteristics[organism]",
+      "value": "Canis lupus familiaris (NCBITaxon:9615), Labrador Retriever",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE title 'A Labrador PeptideAtlas'"
+    },
+    {
+      "location": "row/file mapping",
+      "value": "108 tissue .d raw files (PAC 78 + S-Trap 30) across 15 tissues; tissue/animal/method/replicate decoded from .d names inside the deposited raw ZIPs. Plasma (18) and QExactive plasma/urine bundles are body fluids, not annotated in this tissue-atlas SDRF",
+      "source_ids": [
+        "zip_cd",
+        "overview"
+      ],
+      "evidence": "file names {date}_{Tissue}_WB{animal}_DDA_..._.d and {date}-Canine-{Tissue}-{NN}-DDA-{r}_..._.d"
+    },
+    {
+      "location": "technical metadata",
+      "value": "timsTOF Pro (MS:1003005); DDA (PRIDE:0000627); label-free; Trypsin; Carbamidomethyl+Oxidation; PAC (protein aggregation capture) and S-Trap preps encoded in source name",
+      "source_ids": [
+        "overview"
+      ],
+      "evidence": "overview xlsx descriptions"
+    }
+  ],
+  "limitations": [
+    "individual raw files are inside 100-300 GB ZIP64 archives; filenames recovered via remote central-directory read, not full download",
+    "breed 'Labrador Retriever' is free text (warning-level vs NCBITaxon); age/sex not stated -> not available"
+  ]
+}
