@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD029818/PXD029818.sdrf.tsv",
+  "dataset": "PXD029818",
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD029818"
+    },
+    {
+      "id": "pride_files",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/ws/archive/v3/projects/PXD029818/files/all"
+    }
+  ],
+  "claims": [
+    {
+      "location": "characteristics[organism]",
+      "value": "Oryctolagus cuniculus (NCBITaxon:9986)",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE organism"
+    },
+    {
+      "location": "row/file mapping",
+      "value": "108 individually-zipped .d raw files across 7 eye tissues (conjunctiva/cornea/iris/retina/sclera/tear/vitreous humor), fractionated; tissue+fraction from file-name prefix Rabbit{Tissue}-Fraction{N}",
+      "source_ids": [
+        "pride_files"
+      ],
+      "evidence": "file names Rabbit{Tissue}-Fraction{N}_Slot..._.d.zip"
+    },
+    {
+      "location": "technical metadata",
+      "value": "timsTOF Pro (MS:1003005); DDA; label-free; Trypsin; Carbamidomethyl+Oxidation",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "PRIDE instruments/experimentTypes"
+    }
+  ],
+  "limitations": [
+    "tear mapped to BTO:0001499 (tear fluid); age/sex/strain not stated -> not available"
+  ]
+}
