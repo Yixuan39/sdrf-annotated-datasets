@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD016662/PXD016662-dia.sdrf.tsv",
+  "dataset": "PXD016662",
+  "related_artifacts": [
+    "datasets/PXD016662/PXD016662-dia-phospho.sdrf.tsv"
+  ],
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD016662"
+    },
+    {
+      "id": "pride_files",
+      "kind": "repository",
+      "location": "sandbox/PXD016662/pride_files_all.json"
+    },
+    {
+      "id": "paper",
+      "kind": "publication",
+      "location": "https://doi.org/10.1074/mcp.TIR119.001906"
+    },
+    {
+      "id": "pmc",
+      "kind": "publication",
+      "location": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7124470/"
+    },
+    {
+      "id": "pubmed",
+      "kind": "publication",
+      "location": "https://pubmed.ncbi.nlm.nih.gov/32051234/"
+    }
+  ],
+  "claims": [
+    {
+      "location": "comment[data file] all rows",
+      "value": "36 DIA proteome RAW = 12 tissues \u00d7 3 male Sprague-Dawley rats",
+      "source_ids": [
+        "pride_files",
+        "pmc"
+      ],
+      "evidence": "Filenames DIAprot_CV45_<Tissue>_RatN_*.raw. Paper: three male Sprague-Dawley rats; organ-wide proteome map across 12 rat tissues. Technical HeLa/FAIMS-CV/TMT/phospho RAW excluded from this artifact."
+    },
+    {
+      "location": "characteristics[organism|strain|sex]",
+      "value": "Rattus norvegicus; Sprague-Dawley; male",
+      "source_ids": [
+        "pmc",
+        "pride"
+      ],
+      "evidence": "Methods Rat Tissue Preparation: Three male Sprague-Dawley rats (Crl/S.D., male, 200 g)."
+    },
+    {
+      "location": "characteristics[organism part]/factor",
+      "value": "12 tissues (brain, heart, kidney, liver, lung, spleen, testis, skeletal muscle, pancreas, duodenum, ileum, jejunum)",
+      "source_ids": [
+        "pride_files",
+        "pmc",
+        "pride"
+      ],
+      "evidence": "PRIDE organismsPart + filename tokens; paper organ-wide map of 12 rat tissues."
+    },
+    {
+      "location": "comment[instrument|acquisition|dia windows]",
+      "value": "Orbitrap Exploris 480; DIA 49\u00d713.7 Da windows; survey 350\u20131400; FAIMS CV \u221245 in filename",
+      "source_ids": [
+        "pmc",
+        "pride"
+      ],
+      "evidence": "Methods LC-MS/MS DIA: Exploris 480; mass range 350\u20131400; 49 windows of 13.7 Da overlap 1 Da; NCE 27%. Filenames encode CV45."
+    },
+    {
+      "location": "comment[cleavage|modifications]",
+      "value": "Lys-C+Trypsin PAC; Carbamidomethyl (CAA); Oxidation/Acetyl variable",
+      "source_ids": [
+        "pmc"
+      ],
+      "evidence": "Automated PAC digestion LysC 1:500 + trypsin 1:250; alkylation with chloroacetamide."
+    },
+    {
+      "location": "comment[sdrf template]",
+      "value": "ms-proteomics + vertebrates + dia-acquisition",
+      "source_ids": [
+        "pride"
+      ],
+      "evidence": "Rat tissue DIA atlas."
+    }
+  ],
+  "limitations": [
+    "TMT 11-plex fractionated tissue map (138 RAW) and HeLa/FAIMS technical series held out for separate artifacts.",
+    "DIA spectral-library DDA fractions (HF-X/Lumos) not included in this SDRF.",
+    "Exact chronological age not stated (200 g body weight only); developmental stage annotated adult.",
+    "comment[dia method] uses generic DIA term (no branded SWATH/diaPASEF ontology match)."
+  ]
+}

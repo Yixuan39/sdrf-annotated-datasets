@@ -49,9 +49,32 @@
         "pride"
       ],
       "evidence": "PRIDE instruments/software"
+    },
+    {
+      "location": "comment[instrument]",
+      "value": "Q Exactive Plus (MS:1002634)",
+      "source_ids": [
+        "paper",
+        "pride"
+      ],
+      "evidence": "PMC5495078 / PRIDE sampleProcessingProtocol state Q Exactive Plus; PRIDE instruments facet incorrectly lists Q Exactive"
+    },
+    {
+      "location": "characteristics[strain or breed]",
+      "value": "Oregon-R",
+      "source_ids": [
+        "paper"
+      ],
+      "evidence": "Methods: wild-type Oregon R flies"
+    },
+    {
+      "location": "cleavage/mods",
+      "value": "Trypsin + Carbamidomethyl(C) fixed + Oxidation(M)/Acetyl(Protein N-term) variable via MaxQuant 1.5.2.8 standard settings",
+      "source_ids": [
+        "paper"
+      ],
+      "evidence": "Methods: MaxQuant 1.5.2.8 standard settings (default Andromeda mods/enzyme)"
     }
   ],
-  "limitations": [
-    "strain not stated in file names/abstract -> not available"
-  ]
+  "limitations": []
 }

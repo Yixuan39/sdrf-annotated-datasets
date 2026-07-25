@@ -7,11 +7,16 @@ Shortlist PRIDE/ProteomeXchange shotgun proteomics datasets from non-human anima
 - Monkey / NHP: *Macaca mulatta*, *Chlorocebus sabaeus*, *Cercopithecus aethiops*, other macaques/primates
 - Horse: *Equus caballus*
 - Dog: *Canis lupus familiaris* / *Canis familiaris*
+- Cat: *Felis catus*
+- Rabbit: *Oryctolagus cuniculus*
 - Rat: *Rattus norvegicus*
 - Chicken / Gallus: *Gallus gallus*
 - Zebrafish: *Danio rerio*
 - Cattle: *Bos taurus*
+- Other vertebrates (include when atlas/reference depth is clear): pig (*Sus scrofa*), sheep (*Ovis aries*), goat (*Capra hircus*), guinea pig (*Cavia porcellus*), other fish/birds/mammals with recoverable multi-tissue or deep tissue proteomes
 - Fruit fly / Drosophila: *Drosophila melanogaster* (and closely related *Drosophila* spp. when orthologue mapping to human is explicit)
+
+Mouse (*Mus musculus*) is **not** a primary target (human orthologue resources are already abundant); include only when it is part of an explicit multi-species comparative design with other targets.
 
 ## Include when
 - Organism is one of the targets (single-species or multi-species including human + target)
@@ -28,7 +33,7 @@ Shortlist PRIDE/ProteomeXchange shotgun proteomics datasets from non-human anima
 - Organism mislabeled or mixed without recoverable mapping
 
 ## Extract columns
-- species_group (monkey|horse|dog|rat|gallus|zebrafish|bos|drosophila)
+- species_group (monkey|horse|dog|cat|rabbit|rat|gallus|zebrafish|bos|pig|sheep|goat|other_vertebrate|drosophila)
 - organism_taxname
 - n_tissues_or_parts
 - study_type (tissue_atlas|deep_tissue|comparative_multispecies|reference_proteome|other)

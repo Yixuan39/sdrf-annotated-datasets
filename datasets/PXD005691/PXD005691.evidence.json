@@ -40,18 +40,67 @@
         "pride_files",
         "paper"
       ],
-      "evidence": "file names / deposited samples_mapping.tsv"
+      "evidence": "file names / deposited file-name stage tokens"
     },
     {
       "location": "technical metadata",
-      "value": "Q Exactive (MS:1001911); label-free DDA; Trypsin; Carbamidomethyl (fixed), Oxidation + Acetyl N-term (variable); MaxQuant",
+      "value": "Q Exactive Plus (MS:1002634); label-free DDA; Trypsin; Carbamidomethyl (fixed), Oxidation + Acetyl N-term (variable); MaxQuant",
       "source_ids": [
         "pride"
       ],
       "evidence": "PRIDE instruments/software"
+    },
+    {
+      "location": "comment[instrument]",
+      "value": "Q Exactive Plus (MS:1002634)",
+      "source_ids": [
+        "paper"
+      ],
+      "evidence": "PMC5495078 Methods"
+    },
+    {
+      "location": "characteristics[strain or breed]",
+      "value": "Oregon-R",
+      "source_ids": [
+        "paper"
+      ],
+      "evidence": "Methods: wild-type Oregon R flies"
+    },
+    {
+      "location": "age/stage F vs vF and L/P timepoints",
+      "value": "Decoded from filenames + Methods: L1/L2 ages; P1-P5 daily pupae; vF age=<1D (Methods \u22644 h eclosion); F=1-week adults",
+      "source_ids": [
+        "paper",
+        "pride_files"
+      ],
+      "evidence": "PMC5495078 Methods; file tokens"
+    },
+    {
+      "location": "cleavage/mods",
+      "value": "MaxQuant 1.5.2.8 standard settings imply Trypsin + Carbamidomethyl(C)/Oxidation(M)/Acetyl(Protein N-term)",
+      "source_ids": [
+        "paper"
+      ],
+      "evidence": "Methods MaxQuant standard settings"
+    },
+    {
+      "location": "characteristics[age] repairs",
+      "value": "eL3=83-85 h from filenames; lateL3 age=not available (crawling in factor); pupae=1D-5D; virgin adults age=<1D (Methods \u22644 h eclosion; virgin in factor)",
+      "source_ids": [
+        "pride_files",
+        "paper"
+      ],
+      "evidence": "file tokens + Methods virgin \u22644 h / daily pupae"
+    },
+    {
+      "location": "characteristics[age] virgin; characteristics[developmental stage] FBdv NT",
+      "value": "virgin adults age=<1D (Methods \u22644 h eclosion; Y/M/W/D); larval NT labels = OLS preferred *larval stage*",
+      "source_ids": [
+        "paper",
+        "ols"
+      ],
+      "evidence": "PMC5495078 Methods; OLS FBdv preferred labels"
     }
   ],
-  "limitations": [
-    "strain not stated in file names/abstract -> not available"
-  ]
+  "limitations": []
 }

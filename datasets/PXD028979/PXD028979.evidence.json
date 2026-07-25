@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD028979/PXD028979.sdrf.tsv",
+  "dataset": "PXD028979",
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD028979"
+    },
+    {
+      "id": "pride_files",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/ws/archive/v3/projects/PXD028979/files/all"
+    },
+    {
+      "id": "pride_annotation_xlsx",
+      "kind": "repository",
+      "location": "sandbox/PXD028979/Files_and_annotations_Qian_et_al.xlsx"
+    },
+    {
+      "id": "paper_pmc",
+      "kind": "publication",
+      "location": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9462687/"
+    },
+    {
+      "id": "paper_local",
+      "kind": "publication",
+      "location": "sandbox/PXD028979/PMC9462687.xml"
+    },
+    {
+      "id": "doi",
+      "kind": "publication",
+      "location": "https://doi.org/10.1126/sciadv.abn0756"
+    },
+    {
+      "id": "cellosaurus_bj5ta",
+      "kind": "ontology",
+      "location": "https://www.cellosaurus.org/CVCL_6573"
+    }
+  ],
+  "claims": [
+    {
+      "location": "comment[data file] all rows",
+      "value": "46 total-proteome RAW files (35 individual + 11 species mix_pro)",
+      "source_ids": ["pride_files", "pride_annotation_xlsx"],
+      "evidence": "PRIDE files/all lists 57 RAW; XLSX maps 46 A_Total_proteome_* and 11 B_Phosphoproteome_*. This SDRF covers only A_Total_proteome."
+    },
+    {
+      "location": "characteristics[organism] / factor value[organism]",
+      "value": "11 mammalian species including Homo sapiens",
+      "source_ids": ["pride", "paper_pmc", "pride_annotation_xlsx"],
+      "evidence": "PRIDE organisms and Methods skin-fibroblast panel. Dog mapped to Canis lupus familiaris (NCBITaxon:9615)."
+    },
+    {
+      "location": "comment[sdrf template]",
+      "value": "ms-proteomics + dia-acquisition (no organism-layer template)",
+      "source_ids": ["paper_pmc"],
+      "evidence": "Mixed Homo sapiens + non-human vertebrates; organism templates human/vertebrates are mutually exclusive. Follows mixed-species precedent (e.g. PXD002815) omitting organism-layer template."
+    },
+    {
+      "location": "human rows characteristics[cell line|cellosaurus*|material type|sex]",
+      "value": "BJ-5ta / CVCL_6573 / cell line / male",
+      "source_ids": ["paper_pmc", "pride", "cellosaurus_bj5ta"],
+      "evidence": "Methods: Human SF purchased ATCC CRL-4001 (= BJ-5ta / BJ1-hTERT, Cellosaurus CVCL_6573, male foreskin donor, hTERT-immortalized). Non-human rows remain primary explant cultures (material type cell; cell-line fields not applicable)."
+    },
+    {
+      "location": "characteristics[organism part]",
+      "value": "NT=skin of body;AC=UBERON:0002097",
+      "source_ids": ["paper_pmc", "pride"],
+      "evidence": "Study frames all samples as skin fibroblasts; human ATCC line is foreskin-derived but organism part kept as skin of body for panel consistency."
+    },
+    {
+      "location": "characteristics[cell type]",
+      "value": "NT=fibroblast;AC=CL:0000057",
+      "source_ids": ["paper_pmc", "pride"],
+      "evidence": "Title/Methods exclusively analyze cultured fibroblasts."
+    },
+    {
+      "location": "characteristics[disease]",
+      "value": "NT=normal;AC=PATO:0000461",
+      "source_ids": ["paper_pmc", "cellosaurus_bj5ta"],
+      "evidence": "No disease model; BJ-5ta is non-disease-derived immortalized fibroblast."
+    },
+    {
+      "location": "characteristics[pooled sample] mix_pro rows",
+      "value": "SN= individual fibroblast sources; biological replicate=pooled",
+      "source_ids": ["paper_pmc", "pride_annotation_xlsx"],
+      "evidence": "Methods: peptide-level samples and pooled mixtures per species; XLSX labels mix_pro as A_Total_proteome_<Species>_N."
+    },
+    {
+      "location": "comment[proteomics data acquisition method|instrument|label|mods|DIA windows]",
+      "value": "DIA; Orbitrap Fusion Lumos; label free; Carbamidomethyl/Oxidation/Acetyl; HCD 28%; MS1 350-1650",
+      "source_ids": ["pride", "paper_pmc"],
+      "evidence": "PRIDE protocols and Sci Adv Methods Spectronaut DirectDIA / DIA-MS section."
+    },
+    {
+      "location": "factor value[organism]",
+      "value": "organism/species as experimental factor",
+      "source_ids": ["paper_pmc"],
+      "evidence": "Cross-species proteotype coevolution design with matched fibroblast type."
+    }
+  ],
+  "limitations": [
+    "Paper Methods text says five human proteome replicates, but six individual human RAW files (HsSF_A–F) are deposited; SDRF follows deposited files (XLSX A_Total_proteome_Human_1–6).",
+    "Age and strain remain not available (not reported per culture). Developmental stage left not available despite Cellosaurus donor age <1 month for BJ-5ta.",
+    "cell-lines organism-layer templates not declared because the file mixes primary non-human fibroblasts with one human line; cell-line columns are still populated for human rows.",
+    "Precursor/fragment tolerances not stated for Spectronaut defaults; left not available.",
+    "Published PRIDE/paper search description erroneously lists Cavia_porcellus FASTA for opossum; SDRF organism remains Monodelphis domestica per biology/methods elsewhere."
+  ]
+}

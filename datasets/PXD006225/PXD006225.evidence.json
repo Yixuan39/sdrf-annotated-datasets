@@ -21,7 +21,7 @@
     {
       "id": "paper_pmc",
       "kind": "publication",
-      "location": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5615924/"
+      "location": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5615923/"
     }
   ],
   "claims": [
@@ -49,6 +49,14 @@
         "pride"
       ],
       "evidence": "PRIDE instruments/software"
+    },
+    {
+      "location": "characteristics[sex]/characteristics[age]",
+      "value": "female adults aged 10 days (once-mated)",
+      "source_ids": [
+        "paper"
+      ],
+      "evidence": "PMC5615923 Methods"
     }
   ],
   "limitations": [
