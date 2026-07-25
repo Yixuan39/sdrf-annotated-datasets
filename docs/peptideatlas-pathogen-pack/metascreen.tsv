@@ -1,0 +1,5 @@
+accession	species_group	organism_taxname	study_type	estimated_files_or_samples	publication	orthologue_utility	decision	notes
+PXD042770	archaea	Halobacterium salinarum	reference_proteome_spectral_library	84_wiff	none_in_pride	medium	include	Halo SWATH library DDA; 84 wiff SDRF tracked
+PXD046281	pathogen	Borreliella burgdorferi	reference_proteome	321_raw_wiff	none_in_pride	medium	include	Borrelia PeptideAtlas; instruments from mzML headers; SDRF tracked
+PXD000153	pathogen	Bartonella henselae	reference_proteome	622_RAW	PMID:23878158	medium	include	Bartonella complete proteome; 622 RAW SDRF tracked
+PXD000084	invertebrate	Apis mellifera ligustica	tissue_atlas	38_of_572_RAW_partial	PMID:23878156	high	deferred	Honeybee tissue atlas is invertebrate (not pathogen) and only 38/572 files mappable — deferred to orthologue/invertebrate campaign when full experiment->organ map is available

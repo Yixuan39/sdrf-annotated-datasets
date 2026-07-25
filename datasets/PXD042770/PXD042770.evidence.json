@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "artifact": "datasets/PXD042770/PXD042770.sdrf.tsv",
+  "dataset": "PXD042770",
+  "sources": [
+    {
+      "id": "pride",
+      "kind": "repository",
+      "location": "https://www.ebi.ac.uk/pride/archive/projects/PXD042770"
+    },
+    {
+      "id": "ftp",
+      "kind": "repository",
+      "location": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2023/09/PXD042770/"
+    },
+    {
+      "id": "overview",
+      "kind": "supplement",
+      "location": "sandbox/peptideatlas-pack/PXD042770_overview.xlsx"
+    },
+    {
+      "id": "protocol",
+      "kind": "repository",
+      "location": "PRIDE sampleProcessingProtocol / dataProcessingProtocol for PXD042770"
+    }
+  ],
+  "claims": [
+    {
+      "location": "characteristics[organism] Halo rows",
+      "value": "Halobacterium salinarum NCBITaxon:2242",
+      "source_ids": [
+        "pride",
+        "protocol"
+      ],
+      "evidence": "PRIDE organisms and ATCC700922 NRC-1 culture protocol"
+    },
+    {
+      "location": "characteristics[strain or breed]",
+      "value": "NRC-1",
+      "source_ids": [
+        "protocol"
+      ],
+      "evidence": "H. salinarum sp. NRC-1 (ATCC700922)"
+    },
+    {
+      "location": "comment[instrument]",
+      "value": "TripleTOF 5600",
+      "source_ids": [
+        "pride",
+        "protocol"
+      ],
+      "evidence": "TripleTOF 5600+; mapped to MS TripleTOF 5600"
+    },
+    {
+      "location": "comment[proteomics data acquisition method]",
+      "value": "DDA",
+      "source_ids": [
+        "pride",
+        "protocol"
+      ],
+      "evidence": "Library built from DDA; keywords include DDA"
+    },
+    {
+      "location": "comment[cleavage agent details]",
+      "value": "Trypsin",
+      "source_ids": [
+        "protocol"
+      ],
+      "evidence": "Trypsin 1:50, 16 h"
+    },
+    {
+      "location": "comment[modification parameters]",
+      "value": "CAM fixed; Ox Met var; Acetyl N-term var",
+      "source_ids": [
+        "protocol"
+      ],
+      "evidence": "Search params: +57.021464 C fixed; +15.9949 M var; N-terminal acetylation var in Comet"
+    },
+    {
+      "location": "comment[data file] lysate+OGE",
+      "value": "58 .wiff inside lysate_raw_data.zip and lysate_OGE_raw_data.zip",
+      "source_ids": [
+        "overview",
+        "ftp"
+      ],
+      "evidence": "overview xlsx maps zip\u2192wiff; SDRF uses deposited .wiff basenames"
+    },
+    {
+      "location": "comment[data file] synthetic",
+      "value": "26 synthetic peptide .wiff",
+      "source_ids": [
+        "overview",
+        "protocol"
+      ],
+      "evidence": "RT standardization synthetic peptides of human origin; organism marked not applicable"
+    },
+    {
+      "location": "comment[fractionation method] OGE rows",
+      "value": "off-gel electrophoresis",
+      "source_ids": [
+        "protocol",
+        "overview"
+      ],
+      "evidence": "3100 OFFGEL pH 3-10, 24 cm, 24 fractions; factor sample type OGE"
+    },
+    {
+      "location": "factor value[sample type]",
+      "value": "whole lysate | OGE fractionated lysate | synthetic peptide",
+      "source_ids": [
+        "overview"
+      ],
+      "evidence": "Derived from overview zip categories"
+    },
+    {
+      "location": "characteristics[biological replicate] lysate",
+      "value": "S1-S5",
+      "source_ids": [
+        "overview"
+      ],
+      "evidence": "Filename Halo_S{n}; per-sample growth phase not mapped in overview \u2192 stage/age not available"
+    }
+  ],
+  "limitations": [
+    "Per-sample mapping of mid-exponential vs stationary phase and alternative lysis methods to S1\u2013S5 is not in the overview spreadsheet; developmental stage/growth phase left not available.",
+    "TripleTOF 5600+ recorded as TripleTOF 5600 (MS:1000932).",
+    "Synthetic RT peptides are not H. salinarum biological samples; included for complete deposited .wiff coverage of the spectral-library project.",
+    "No PubMed publication linked in PRIDE references list at annotation time."
+  ]
+}
