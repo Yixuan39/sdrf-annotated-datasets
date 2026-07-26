@@ -47,6 +47,9 @@ HEADER_ALIASES = {
     "comment[raw file]": "comment[data file]",
     "comment[rawfile]": "comment[data file]",
     "characteristics[strain]": "characteristics[strain or breed]",
+    "material type": "characteristics[material type]",
+    "comment[biological replicate]": "characteristics[biological replicate]",
+    "biological replicate": "characteristics[biological replicate]",
 }
 
 DISSOCIATION = {
@@ -66,7 +69,6 @@ NUMERIC_REQUIRED = {
 EMPTY_TO_NOT_APPLICABLE = {
     "characteristics[organism part]",
     "characteristics[cell type]",
-    "characteristics[disease]",
 }
 
 EMPTY_TO_NOT_AVAILABLE = {
@@ -180,7 +182,24 @@ def clean_cell(value: str) -> str:
 
 
 def fix_modification(value: str) -> str:
-    return re.sub(r"(?i)MT=(fixed|variable)", lambda m: f"MT={m.group(1).capitalize()}", value)
+    value = re.sub(r"(?i)MT=(fixed|variable)", lambda m: f"MT={m.group(1).capitalize()}", value)
+    # Depositors sometimes write AC=1 instead of AC=UNIMOD:1.
+    value = re.sub(r"(?i)\bAC=(\d+)\b", r"AC=UNIMOD:\1", value)
+    value = re.sub(r";;+", ";", value)
+    value = re.sub(r";$", "", value)
+    return value
+
+
+def fix_replicate(value: str) -> str:
+    token = value.strip()
+    if is_missing(token):
+        return "1"
+    match = re.fullmatch(r"[Rr](\d+)", token)
+    if match:
+        return match.group(1)
+    if token.isdigit():
+        return token
+    return value
 
 
 def fix_dissociation(value: str) -> str:
@@ -369,9 +388,10 @@ def reorder(header: list[str], rows: list[list[str]]) -> tuple[list[str], list[l
 
 def fill_required_defaults(header: list[str], rows: list[list[str]]) -> None:
     for index, name in enumerate(header):
-        if name in NUMERIC_REQUIRED:
-            default = NUMERIC_REQUIRED[name]
+        if name in NUMERIC_REQUIRED or name == "characteristics[biological replicate]":
+            default = NUMERIC_REQUIRED.get(name, "1")
             for row in rows:
+                row[index] = fix_replicate(row[index]) if name.endswith("replicate]") else row[index]
                 if is_missing(row[index]):
                     row[index] = default
         elif name in EMPTY_TO_NOT_APPLICABLE:
@@ -403,11 +423,28 @@ def fill_required_defaults(header: list[str], rows: list[list[str]]) -> None:
         elif name == "comment[label]":
             for row in rows:
                 row[index] = fix_label(row[index])
+        elif name == "characteristics[disease]":
+            for row in rows:
+                value = row[index]
+                if is_missing(value):
+                    row[index] = "not applicable"
+                elif "healthy" in value.lower() or value.strip().lower() in {"normal", "control"}:
+                    row[index] = "NT=normal;AC=PATO:0000461"
         elif name == "characteristics[age]":
             # Age usually forbids not applicable.
             for row in rows:
                 if is_missing(row[index]) or row[index].strip().lower() == "not applicable":
                     row[index] = "not available"
+        elif name == "comment[precursor mass tolerance]":
+            for row in rows:
+                if "resolution" in row[index].lower() or is_missing(row[index]):
+                    # Resolution is not a mass tolerance; leave a safe common default only when
+                    # the deposited value is clearly the wrong quantity.
+                    row[index] = "20 ppm"
+        elif name == "comment[fragment mass tolerance]":
+            for row in rows:
+                if "resolution" in row[index].lower() or is_missing(row[index]):
+                    row[index] = "0.02 Da"
 
 
 def detect_acquisition(header: list[str], rows: list[list[str]], screen_mode: str) -> str:
@@ -446,11 +483,15 @@ def normalise_file(path: Path, acquisition_mode: str) -> tuple[Path, list[str]]:
     ensure_column(header, rows, "comment[label]", LABEL_FREE)
     ensure_column(header, rows, "comment[fraction identifier]", "1")
     ensure_column(header, rows, "comment[technical replicate]", "1")
+    ensure_column(header, rows, "characteristics[biological replicate]", "1")
     set_column(header, rows, "comment[sdrf version]", SDRF_VERSION)
     set_column(header, rows, "comment[sdrf annotation tool]", ANNOTATION_TOOL)
     set_column(header, rows, "comment[proteomics data acquisition method]", ACQUISITION[mode])
 
     templates = declare_templates(header, rows, mode)
+    if "human" in templates:
+        ensure_column(header, rows, "characteristics[age]", "not available")
+        ensure_column(header, rows, "characteristics[sex]", "not available")
     fill_required_defaults(header, rows)
     header, rows = reorder(header, rows)
 
@@ -484,16 +525,31 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--classifications", default="full")
     parser.add_argument("--allow-row-mismatch", action="store_true")
+    parser.add_argument(
+        "--accessions",
+        default="",
+        help="Comma-separated accession filter; empty means all matching triage rows",
+    )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Skip accessions that already have datasets/{ACC}/",
+    )
     args = parser.parse_args()
 
     metascreen = load_metascreen(args.metascreen)
     allowed = {item.strip() for item in args.classifications.split(",") if item.strip()}
+    wanted = {item.strip() for item in args.accessions.split(",") if item.strip()}
     with args.triage.open() as handle:
         candidates = list(csv.DictReader(handle, delimiter="\t"))
 
     selected = []
     for row in candidates:
         if row["classification"] not in allowed:
+            continue
+        if wanted and row["id"] not in wanted:
+            continue
+        if args.skip_existing and (REPO_ROOT / "datasets" / row["id"]).is_dir():
             continue
         if not args.allow_row_mismatch and row.get("row_match") != "yes":
             continue

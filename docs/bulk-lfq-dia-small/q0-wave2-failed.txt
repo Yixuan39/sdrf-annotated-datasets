@@ -1,0 +1,15 @@
+PXD074583	ERROR: Required column 'characteristics[biological replicate]' is missing from the SDRF file
+PXD059631	ERROR: Required column 'characteristics[biological replicate]' is missing from the SDRF file
+PXD070581	ERROR: Value 'R2' does not match required pattern
+PXD070607	ERROR: Required column 'characteristics[biological replicate]' is missing from the SDRF file
+PXD075756	ERROR: Required column 'characteristics[biological replicate]' is missing from the SDRF file
+PXD071825	ERROR: Required column 'characteristics[biological replicate]' is missing from the SDRF file
+PXD073413	ERROR: Empty value found Row: 1, Column: comment[instrument], Source: P01-M24359769a-KRAS/G12D(Tumor)
+PXD060259	ERROR: Term: NT=Acetyl;AC=1;;MT=Variable;PP=Protein N-term;TA= in column 'comment[modification parameters]', is not a valid ontology term
+PXD073452	ERROR: Combination '('BSU1 FL (Trx-BIN2)', '13808')' in columns 'source name, assay name' is duplicated at rows: 5, 15
+PXD070494	missing columns: assay name
+PXD072077	ERROR: Required column 'characteristics[age]' is missing from the SDRF file
+PXD069669	missing columns: comment[instrument]
+PXD073022	ERROR: Term: cell pellet in column 'characteristics[sample type]', is not found in the given ontology list pride
+PXD067019	ERROR: Column 'material type' is in the wrong position
+PXD055472	ERROR: Empty value found Row: 99, Column: source name, Source: n/a
