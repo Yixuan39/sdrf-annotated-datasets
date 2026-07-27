@@ -1,0 +1,15 @@
+PXD073256	ERROR: duplicate source name×assay name; also invalid age "not available years"
+PXD023222	row_match=no (n_rows=162 vs n_raw=18); skipped
+PXD030748	row_match=no (n_rows=180 vs n_raw=18); skipped
+PXD031000	row_match=no (n_rows=134 vs n_raw=16); skipped
+PXD034334	row_match=no (n_rows=36 vs n_raw=18); skipped
+PXD035918	row_match=no (n_rows=288 vs n_raw=18); skipped
+PXD055781	row_match=no (n_rows=9 vs n_raw=17); skipped
+PXD045896	row_match=no (n_rows=8 vs n_raw=19); skipped
+PXD053749	partial-technical (sample section missing; skipped)
+PXD030447	not-sdrf / non-SDRF deposit
+PXD050212	not-sdrf / non-SDRF deposit
+PXD065028	not-sdrf / non-SDRF deposit
+PXD067153	not-sdrf / non-SDRF deposit
+PXD067220	not-sdrf / non-SDRF deposit
+PXD068063	xlsx-only deposit (skipped)

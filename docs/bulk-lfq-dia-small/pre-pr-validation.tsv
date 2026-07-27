@@ -1,0 +1,657 @@
+status	path	errors
+fail	datasets/PXD000498/PXD000498.sdrf.tsv	ERROR: Term: NT=LysC; AC=1001309 in column 'comment[cleavage agent details]', is not found in the given ontology list ms | ERROR: Term: NT=LysC; AC=1001310 in column 'comment[cleavage agent details]', is not found in the given ontology list ms | ERROR: Term: NT=LysC; AC=1001311 in column 'comment[cleavage agent details]', is not found in the given ontology list ms | ERROR: Term: NT=LysC; AC=1001312 in column 'comment[cleavage agent details]', is not found in the given ontology list ms | ERROR: Term: NT=LysC; AC=1001313 in column 'comment[cleavage agent details]', is not found in the given ontology list ms | ERROR: Term: NT=LysC; AC=1001314 in column 'comment[cleavage agent details]', is not found in the given ontology list ms | ERROR: Term: NT=LysC; AC=1001315 in column 'comment[cleavage agent details]', is not found in the given ontology list ms | ERROR: Term: NT=LysC; AC=1001316 in column 'comment[cleavage agent details]', is not found in the given ontology list ms
+fail	datasets/PXD002255/PXD002255.sdrf.tsv	ERROR: Term: NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 NT=Phospho;MT=variable;TA=K;AC=UNIMOD:21 in column 'comment[modification parameters]', is not a valid ontology term
+fail	datasets/PXD002815/PXD002815.sdrf.tsv	ERROR: Term: not available in column 'characteristics[organism]', is not found in the given ontology list ncbitaxon | ERROR: Column 'characteristics[organism]' contains 'not available' values but requires actual values
+fail	datasets/PXD004452/PXD004452-celllines.sdrf.tsv	ERROR: Term: not available in column 'comment[cleavage agent details]', is not found in the given ontology list ms | ERROR: Column 'comment[cleavage agent details]' contains 'not available' values but requires actual values
+fail	datasets/PXD004616/PXD004616.sdrf.tsv	timeout
+fail	datasets/PXD004618/PXD004618.sdrf.tsv	timeout
+fail	datasets/PXD004682/PXD004682.sdrf.tsv	timeout
+fail	datasets/PXD008722/PXD008722.sdrf.tsv	timeout
+fail	datasets/PXD008840/PXD008840.sdrf.tsv	timeout
+fail	datasets/PXD008841/PXD008841.sdrf.tsv	timeout
+fail	datasets/PXD008862/PXD008862.sdrf.tsv	timeout
+fail	datasets/PXD008921/PXD008921.sdrf.tsv	timeout
+fail	datasets/PXD008934/PXD008934.sdrf.tsv	timeout
+fail	datasets/PXD009086/PXD009086.sdrf.tsv	timeout
+fail	datasets/PXD009157/PXD009157.sdrf.tsv	timeout
+fail	datasets/PXD009196/PXD009196.sdrf.tsv	timeout
+fail	datasets/PXD009199/PXD009199.sdrf.tsv	timeout
+fail	datasets/PXD009203/PXD009203.sdrf.tsv	timeout
+fail	datasets/PXD009243/PXD009243.sdrf.tsv	timeout
+fail	datasets/PXD009449/Kmod_Malonyl.sdrf.tsv	timeout
+fail	datasets/PXD009465/PXD009465.sdrf.tsv	timeout
+fail	datasets/PXD009525/PXD009525.sdrf.tsv	timeout
+fail	datasets/PXD009602/PXD009602.sdrf.tsv	timeout
+fail	datasets/PXD009623/PXD009623-dda.sdrf.tsv	timeout
+fail	datasets/PXD009623/PXD009623-dia.sdrf.tsv	timeout
+fail	datasets/PXD009630/PXD009630.sdrf.tsv	timeout
+fail	datasets/PXD009676/PXD009676.sdrf.tsv	timeout
+fail	datasets/PXD009705/PXD009705.sdrf.tsv	timeout
+fail	datasets/PXD009802/PXD009802.sdrf.tsv	timeout
+fail	datasets/PXD009815/PXD009815.sdrf.tsv	timeout
+fail	datasets/PXD009891/PXD009891.sdrf.tsv	timeout
+fail	datasets/PXD009909/PXD009909.sdrf.tsv	timeout
+fail	datasets/PXD010020/PXD010020.sdrf.tsv	timeout
+fail	datasets/PXD010028/PXD010028.sdrf.tsv	timeout
+fail	datasets/PXD010154/PXD010154.sdrf.tsv	timeout
+fail	datasets/PXD010271/PXD010271.sdrf.tsv	timeout
+fail	datasets/PXD010357/PXD010357.sdrf.tsv	timeout
+fail	datasets/PXD013273/PXD013273.sdrf.tsv	ERROR: Term: NT=LysC; AC=1001309 in column 'comment[cleavage agent details]', is not found in the given ontology list ms
+fail	datasets/PXD014210/PXD014210.sdrf.tsv	ERROR: Invalid value 'NT=Data-independent acquisition;AC=PRIDE:0000450' - must be one of the allowed values
+fail	datasets/PXD017618/PXD017618.sdrf.tsv	ERROR: Term: NT=LysC; AC=1001309 in column 'comment[cleavage agent details]', is not found in the given ontology list ms
+fail	datasets/PXD020249/PXD020249.sdrf.tsv	ERROR: Column 'source name' contains 'not available' values but requires actual values
+fail	datasets/PXD029931/PXD029931.sdrf.tsv	ERROR: Term: NT=LysC; AC=1001309 in column 'comment[cleavage agent details]', is not found in the given ontology list ms
+fail	datasets/PXD032954/PXD032954.sdrf.tsv	ERROR: Term: NT=LysC; AC=1001309 in column 'comment[cleavage agent details]', is not found in the given ontology list ms
+fail	datasets/PXD035579/PXD035579.sdrf.tsv	ERROR: Invalid value 'NT=Data-independent acquisition;AC=PRIDE:0000450' - must be one of the allowed values
+fail	datasets/PXD036497/PXD036497.sdrf.tsv	ERROR: Term: study sample in column 'characteristics[sample type]', is not found in the given ontology list pride
+fail	datasets/PXD037033/PXD037033.sdrf.tsv	ERROR: Term: NT=study sample;AC=PRIDE:0001013 in column 'characteristics[sample type]', is not found in the given ontology list pride
+fail	datasets/PXD037531/PXD037531.sdrf.tsv	timeout
+fail	datasets/PXD038122/PXD038122.sdrf.tsv	timeout
+fail	datasets/PXD038367/PXD038367.sdrf.tsv	timeout
+fail	datasets/PXD038552/PXD038552.sdrf.tsv	timeout
+fail	datasets/PXD038632/PXD038632.sdrf.tsv	timeout
+fail	datasets/PXD039066/PXD039066.sdrf.tsv	timeout
+fail	datasets/PXD039585/PXD039585.sdrf.tsv	timeout
+fail	datasets/PXD039703/PXD039703.sdrf.tsv	timeout
+fail	datasets/PXD040292/PXD040292.sdrf.tsv	ERROR: Column 'comment[proteomics data acquisition method]' has multiple unique values: NT=Data-independent acquisition;AC=PRIDE:0000450, NT=Data-dependent acquisition;AC=PRIDE:0000627 | ERROR: Invalid value 'NT=Data-independent acquisition;AC=PRIDE:0000450' - must be one of the allowed values | ERROR: Invalid value 'NT=Data-dependent acquisition;AC=PRIDE:0000627' - must be one of the allowed values
+fail	datasets/PXD042101/PXD042101.sdrf.tsv	ERROR: Term: NT=study sample;AC=PRIDE:0001013 in column 'characteristics[sample type]', is not found in the given ontology list pride
+fail	datasets/PXD043473/PXD043473.sdrf.tsv	ERROR: Term: not applicable in column 'comment[label]', is not found in the given ontology list pride | ERROR: Term: not available in column 'comment[label]', is not found in the given ontology list pride | ERROR: Column 'comment[label]' contains 'not applicable' values but requires actual values | ERROR: Column 'comment[label]' contains 'not available' values but requires actual values
+fail	datasets/PXD045844/PXD045844.sdrf.tsv	timeout
+fail	datasets/PXD046357/PXD046357.sdrf.tsv	timeout
+fail	datasets/PXD046467/PXD046467.sdrf.tsv	timeout
+fail	datasets/PXD046594/PXD046594.sdrf.tsv	timeout
+fail	datasets/PXD046848/PXD046848.sdrf.tsv	timeout
+fail	datasets/PXD047534/PXD047534.sdrf.tsv	timeout
+fail	datasets/PXD048052/PXD048052.sdrf.tsv	timeout
+fail	datasets/PXD048179/PXD048179.sdrf.tsv	timeout
+fail	datasets/PXD048363/PXD048363.sdrf.tsv	timeout
+fail	datasets/PXD055169/PXD055169.sdrf.tsv	ERROR: Required column 'characteristics[age]' is missing from the SDRF file | ERROR: Required column 'characteristics[sex]' is missing from the SDRF file
+fail	datasets/PXD057601/PXD057601.sdrf.tsv	ERROR: Invalid value 'NT=Data-independent acquisition;AC=PRIDE:0000450' - must be one of the allowed values
+fail	datasets/PXD061638/PXD061638.sdrf.tsv	ERROR: Invalid value 'NT=Data-independent acquisition;AC=PRIDE:0000450' - must be one of the allowed values
+fail	datasets/PXD061698/PXD061698.sdrf.tsv	ERROR: Invalid value 'NT=Data-independent acquisition;AC=PRIDE:0000450' - must be one of the allowed values
+fail	datasets/PXD061710/PXD061710.sdrf.tsv	ERROR: Column 'characteristics[cell line]' contains 'not applicable' values but requires actual values | ERROR: Value 'not applicable' does not match required pattern | ERROR: Column 'characteristics[cellosaurus accession]' contains 'not applicable' values but requires actual values | ERROR: Column 'characteristics[cellosaurus name]' contains 'not applicable' values but requires actual values
+fail	datasets/PXD061725/PXD061725.sdrf.tsv	ERROR: Invalid value 'NT=Data-independent acquisition;AC=PRIDE:0000450' - must be one of the allowed values
+fail	datasets/PXD064912/PXD064912.sdrf.tsv	ERROR: Invalid value 'NT=Data-independent acquisition;AC=PRIDE:0000450' - must be one of the allowed values
+fail	datasets/PXD066685/PXD066685.sdrf.tsv	ERROR: Term: NT=study sample;AC=PRIDE:0001013 in column 'characteristics[sample type]', is not found in the given ontology list pride
+fail	datasets/PXD067119/PXD067119.sdrf.tsv	ERROR: Term: NT=trypsin and LysC in column 'comment[cleavage agent details]', is not found in the given ontology list ms
+ok	datasets/COMBINEDPX0000001/COMBINEDPX0000001.sdrf.tsv	
+ok	datasets/MSV000078494/MSV000078494.sdrf.tsv	
+ok	datasets/MSV000078535/MSV000078535.sdrf.tsv	
+ok	datasets/MSV000078555/MSV000078555.sdrf.tsv	
+ok	datasets/MSV000080451/MSV000080451.sdrf.tsv	
+ok	datasets/MSV000086206/MSV000086206.sdrf.tsv	
+ok	datasets/MSV000093870/MSV000093870.sdrf.tsv	
+ok	datasets/PDC000127/PDC000127.sdrf.tsv	
+ok	datasets/PMID21183079/PMID21183079.sdrf.tsv	
+ok	datasets/PMID25043054/PMID25043054.sdrf.tsv	
+ok	datasets/PMID28625833/PMID28625833.sdrf.tsv	
+ok	datasets/PMID31975593/PMID31975593.sdrf.tsv	
+ok	datasets/PMID33086064/PMID33086064.sdrf.tsv	
+ok	datasets/PXD000070/PXD000070.sdrf.tsv	
+ok	datasets/PXD000131/PXD000131.sdrf.tsv	
+ok	datasets/PXD000153/PXD000153.sdrf.tsv	
+ok	datasets/PXD000228/PXD000228.sdrf.tsv	
+ok	datasets/PXD000288/PXD000288.sdrf.tsv	
+ok	datasets/PXD000312/PXD000312.sdrf.tsv	
+ok	datasets/PXD000396/PXD000396.sdrf.tsv	
+ok	datasets/PXD000527/PXD000527.sdrf.tsv	
+ok	datasets/PXD000534/PXD000534.sdrf.tsv	
+ok	datasets/PXD000547/PXD000547.sdrf.tsv	
+ok	datasets/PXD000548/PXD000548.sdrf.tsv	
+ok	datasets/PXD000561/PXD000561.sdrf.tsv	
+ok	datasets/PXD000612/PXD000612.sdrf.tsv	
+ok	datasets/PXD000651/PXD000651.sdrf.tsv	
+ok	datasets/PXD000652/PXD000652.sdrf.tsv	
+ok	datasets/PXD000702/PXD000702.sdrf.tsv	
+ok	datasets/PXD000759/PXD000759.sdrf.tsv	
+ok	datasets/PXD000790/PXD000790.sdrf.tsv	
+ok	datasets/PXD000792/PXD000792.sdrf.tsv	
+ok	datasets/PXD000793/PXD000793.sdrf.tsv	
+ok	datasets/PXD000815/PXD000815.sdrf.tsv	
+ok	datasets/PXD000857/PXD000857.sdrf.tsv	
+ok	datasets/PXD000895/PXD000895.sdrf.tsv	
+ok	datasets/PXD000902/PXD000902.sdrf.tsv	
+ok	datasets/PXD000923/PXD000923.sdrf.tsv	
+ok	datasets/PXD000999/PXD000999.sdrf.tsv	
+ok	datasets/PXD001061/PXD001061.sdrf.tsv	
+ok	datasets/PXD001064/PXD001064-DIA.sdrf.tsv	
+ok	datasets/PXD001168/PXD001168.sdrf.tsv	
+ok	datasets/PXD001224/PXD001224.sdrf.tsv	
+ok	datasets/PXD001268/PXD001268.sdrf.tsv	
+ok	datasets/PXD001325/PXD001325.sdrf.tsv	
+ok	datasets/PXD001381/PXD001381.sdrf.tsv	
+ok	datasets/PXD001404/PXD001404.sdrf.tsv	
+ok	datasets/PXD001468/PXD001468.sdrf.tsv	
+ok	datasets/PXD001474/PXD001474.sdrf.tsv	
+ok	datasets/PXD001487/PXD001487.sdrf.tsv	
+ok	datasets/PXD001558/PXD001558.sdrf.tsv	
+ok	datasets/PXD001684/PXD001684.sdrf.tsv	
+ok	datasets/PXD001725/PXD001725.sdrf.tsv	
+ok	datasets/PXD001736/PXD001736.sdrf.tsv	
+ok	datasets/PXD001774/PXD001774.sdrf.tsv	
+ok	datasets/PXD001819/PXD001819.sdrf.tsv	
+ok	datasets/PXD001928/PXD001928.sdrf.tsv	
+ok	datasets/PXD001972/PXD001972.sdrf.tsv	
+ok	datasets/PXD002029/PXD002029.sdrf.tsv	
+ok	datasets/PXD002049/PXD002049.sdrf.tsv	
+ok	datasets/PXD002080/PXD002080.sdrf.tsv	
+ok	datasets/PXD002081/PXD002081.sdrf.tsv	
+ok	datasets/PXD002082/PXD002082.sdrf.tsv	
+ok	datasets/PXD002084/PXD002084.sdrf.tsv	
+ok	datasets/PXD002086/PXD002086.sdrf.tsv	
+ok	datasets/PXD002087/PXD002087.sdrf.tsv	
+ok	datasets/PXD002088/PXD002088.sdrf.tsv	
+ok	datasets/PXD002156/PXD002156.sdrf.tsv	
+ok	datasets/PXD002171/PXD002171.sdrf.tsv	
+ok	datasets/PXD002192/PXD002192.sdrf.tsv	
+ok	datasets/PXD002222/PXD002222.sdrf.tsv	
+ok	datasets/PXD002247/PXD002247.sdrf.tsv	
+ok	datasets/PXD002266/PXD002266.sdrf.tsv	
+ok	datasets/PXD002367/PXD002367.sdrf.tsv	
+ok	datasets/PXD002370/PXD002370.sdrf.tsv	
+ok	datasets/PXD002395/PXD002395.sdrf.tsv	
+ok	datasets/PXD002403/PXD002403.sdrf.tsv	
+ok	datasets/PXD002756/PXD002756.sdrf.tsv	
+ok	datasets/PXD002870/PXD002870.sdrf.tsv	
+ok	datasets/PXD003028/PXD003028.sdrf.tsv	
+ok	datasets/PXD003121/PXD003121.sdrf.tsv	
+ok	datasets/PXD003133/PXD003133.sdrf.tsv	
+ok	datasets/PXD003204/PXD003204.sdrf.tsv	
+ok	datasets/PXD003209/PXD003209.sdrf.tsv	
+ok	datasets/PXD003214/PXD003214.sdrf.tsv	
+ok	datasets/PXD003283/PXD003283.sdrf.tsv	
+ok	datasets/PXD003430/PXD003430.sdrf.tsv	
+ok	datasets/PXD003452/PXD003452.sdrf.tsv	
+ok	datasets/PXD003469/PXD003469.sdrf.tsv	
+ok	datasets/PXD003515/PXD003515.sdrf.tsv	
+ok	datasets/PXD003531/PXD003531.sdrf.tsv	
+ok	datasets/PXD003539/PXD003539.sdrf.tsv	
+ok	datasets/PXD003615/PXD003615.sdrf.tsv	
+ok	datasets/PXD003636/PXD003636.sdrf.tsv	
+ok	datasets/PXD003668/PXD003668.sdrf.tsv	
+ok	datasets/PXD003691/PXD003691.sdrf.tsv	
+ok	datasets/PXD003747/PXD003747.sdrf.tsv	
+ok	datasets/PXD003823/PXD003823.sdrf.tsv	
+ok	datasets/PXD003868/PXD003868.sdrf.tsv	
+ok	datasets/PXD003947/PXD003947.sdrf.tsv	
+ok	datasets/PXD003977/PXD003977.sdrf.tsv	
+ok	datasets/PXD004131/PXD004131.sdrf.tsv	
+ok	datasets/PXD004132/PXD004132.sdrf.tsv	
+ok	datasets/PXD004142/PXD004142.sdrf.tsv	
+ok	datasets/PXD004143/PXD004143.sdrf.tsv	
+ok	datasets/PXD004159/PXD004159.sdrf.tsv	
+ok	datasets/PXD004197/PXD004197.sdrf.tsv	
+ok	datasets/PXD004242/PXD004242.sdrf.tsv	
+ok	datasets/PXD004332/PXD004332.sdrf.tsv	
+ok	datasets/PXD004436/PXD004436.sdrf.tsv	
+ok	datasets/PXD004452/PXD004452-tissues.sdrf.tsv	
+ok	datasets/PXD004528/PXD004528.sdrf.tsv	
+ok	datasets/PXD004560/PXD004560.sdrf.tsv	
+ok	datasets/PXD004577/PXD004577.sdrf.tsv	
+ok	datasets/PXD004603/PXD004603.sdrf.tsv	
+ok	datasets/PXD004604/PXD004604.sdrf.tsv	
+ok	datasets/PXD004605/PXD004605.sdrf.tsv	
+ok	datasets/PXD004613/PXD004613.sdrf.tsv	
+ok	datasets/PXD004617/PXD004617.sdrf.tsv	
+ok	datasets/PXD004624/PXD004624.sdrf.tsv	
+ok	datasets/PXD004683/PXD004683.sdrf.tsv	
+ok	datasets/PXD004684/PXD004684.sdrf.tsv	
+ok	datasets/PXD004701/PXD004701.sdrf.tsv	
+ok	datasets/PXD004705/PXD004705.sdrf.tsv	
+ok	datasets/PXD004732/PXD004732.sdrf.tsv	
+ok	datasets/PXD004903/PXD004903.sdrf.tsv	
+ok	datasets/PXD004928/PXD004928.sdrf.tsv	
+ok	datasets/PXD004939/PXD004939.sdrf.tsv	
+ok	datasets/PXD004987/PXD004987.sdrf.tsv	
+ok	datasets/PXD004997/PXD004997.sdrf.tsv	
+ok	datasets/PXD004998/PXD004998-DIA.sdrf.tsv	
+ok	datasets/PXD005163/PXD005163.sdrf.tsv	
+ok	datasets/PXD005171/PXD005171.sdrf.tsv	
+ok	datasets/PXD005172/PXD005172.sdrf.tsv	
+ok	datasets/PXD005173/PXD005173.sdrf.tsv	
+ok	datasets/PXD005174/PXD005174.sdrf.tsv	
+ok	datasets/PXD005175/PXD005175.sdrf.tsv	
+ok	datasets/PXD005176/PXD005176.sdrf.tsv	
+ok	datasets/PXD005177/PXD005177.sdrf.tsv	
+ok	datasets/PXD005207/PXD005207.sdrf.tsv	
+ok	datasets/PXD005241/PXD005241.sdrf.tsv	
+ok	datasets/PXD005300/PXD005300.sdrf.tsv	
+ok	datasets/PXD005354/PXD005354.sdrf.tsv	
+ok	datasets/PXD005355/PXD005355.sdrf.tsv	
+ok	datasets/PXD005366/PXD005366-hela.sdrf.tsv	
+ok	datasets/PXD005366/PXD005366-rattus.sdrf.tsv	
+ok	datasets/PXD005366/PXD005366.sdrf.tsv	
+ok	datasets/PXD005445/PXD005445.sdrf.tsv	
+ok	datasets/PXD005463/PXD005463.sdrf.tsv	
+ok	datasets/PXD005507/PXD005507.sdrf.tsv	
+ok	datasets/PXD005539/PXD005539.sdrf.tsv	
+ok	datasets/PXD005554/PXD005554.sdrf.tsv	
+ok	datasets/PXD005649/PXD005649.sdrf.tsv	
+ok	datasets/PXD005691/PXD005691.sdrf.tsv	
+ok	datasets/PXD005713/PXD005713.sdrf.tsv	
+ok	datasets/PXD005780/PXD005780.sdrf.tsv	
+ok	datasets/PXD005819/PXD005819.sdrf.tsv	
+ok	datasets/PXD005940/PXD005940.sdrf.tsv	
+ok	datasets/PXD005942/PXD005942.sdrf.tsv	
+ok	datasets/PXD005946/PXD005946.sdrf.tsv	
+ok	datasets/PXD006003/PXD006003.sdrf.tsv	
+ok	datasets/PXD006077/PXD006077.sdrf.tsv	
+ok	datasets/PXD006132/PXD006132.sdrf.tsv	
+ok	datasets/PXD006195/PXD006195.sdrf.tsv	
+ok	datasets/PXD006225/PXD006225.sdrf.tsv	
+ok	datasets/PXD006233/PXD006233.sdrf.tsv	
+ok	datasets/PXD006401/PXD006401.sdrf.tsv	
+ok	datasets/PXD006430/PXD006430-silac.sdrf.tsv	
+ok	datasets/PXD006430/PXD006430-tmt.sdrf.tsv	
+ok	datasets/PXD006482/PXD006482.sdrf.tsv	
+ok	datasets/PXD006542/PXD006542.sdrf.tsv	
+ok	datasets/PXD006607/PXD006607.sdrf.tsv	
+ok	datasets/PXD006675/PXD006675.sdrf.tsv	
+ok	datasets/PXD006745/PXD006745.sdrf.tsv	
+ok	datasets/PXD006823/PXD006823.sdrf.tsv	
+ok	datasets/PXD006877/PXD006877.sdrf.tsv	
+ok	datasets/PXD006905/PXD006905.sdrf.tsv	
+ok	datasets/PXD006914/PXD006914.sdrf.tsv	
+ok	datasets/PXD007073/PXD007073.sdrf.tsv	
+ok	datasets/PXD007160/PXD007160.sdrf.tsv	
+ok	datasets/PXD007171/PXD007171.sdrf.tsv	
+ok	datasets/PXD007555/PXD007555.sdrf.tsv	
+ok	datasets/PXD007662/PXD007662.sdrf.tsv	
+ok	datasets/PXD007712/PXD007712.sdrf.tsv	
+ok	datasets/PXD007842/PXD007842.sdrf.tsv	
+ok	datasets/PXD007864/PXD007864.sdrf.tsv	
+ok	datasets/PXD007875/PXD007875.sdrf.tsv	
+ok	datasets/PXD007944/PXD007944-DIA.sdrf.tsv	
+ok	datasets/PXD008012/PXD008012.sdrf.tsv	
+ok	datasets/PXD008119/PXD008119.sdrf.tsv	
+ok	datasets/PXD008222/PXD008222.sdrf.tsv	
+ok	datasets/PXD008355/PXD008355.sdrf.tsv	
+ok	datasets/PXD008369/PXD008369.sdrf.tsv	
+ok	datasets/PXD008440/PXD008440.sdrf.tsv	
+ok	datasets/PXD010371/PXD010371.sdrf.tsv	
+ok	datasets/PXD010429/PXD010429.sdrf.tsv	
+ok	datasets/PXD010595/PXD010595.sdrf.tsv	
+ok	datasets/PXD010603/PXD010603.sdrf.tsv	
+ok	datasets/PXD010695/PXD010695.sdrf.tsv	
+ok	datasets/PXD010698/PXD010698.sdrf.tsv	
+ok	datasets/PXD010705/PXD010705.sdrf.tsv	
+ok	datasets/PXD010708/PXD010708.sdrf.tsv	
+ok	datasets/PXD010876/PXD010876.sdrf.tsv	
+ok	datasets/PXD010956/PXD010956.sdrf.tsv	
+ok	datasets/PXD010981/PXD010981.sdrf.tsv	
+ok	datasets/PXD011023/PXD011023.sdrf.tsv	
+ok	datasets/PXD011050/PXD011050.sdrf.tsv	
+ok	datasets/PXD011081/PXD011081.sdrf.tsv	
+ok	datasets/PXD011153/PXD011153.sdrf.tsv	
+ok	datasets/PXD011175/PXD011175.sdrf.tsv	
+ok	datasets/PXD011290/PXD011290.sdrf.tsv	
+ok	datasets/PXD011589/PXD011589.sdrf.tsv	
+ok	datasets/PXD011799/PXD011799.sdrf.tsv	
+ok	datasets/PXD011839/PXD011839.sdrf.tsv	
+ok	datasets/PXD011967/PXD011967.sdrf.tsv	
+ok	datasets/PXD012131/PXD012131.sdrf.tsv	
+ok	datasets/PXD012143/PXD012143.sdrf.tsv	
+ok	datasets/PXD012203/PXD012203.sdrf.tsv	
+ok	datasets/PXD012243/PXD012243.sdrf.tsv	
+ok	datasets/PXD012255/PXD012255.sdrf.tsv	
+ok	datasets/PXD012277/PXD012277.sdrf.tsv	
+ok	datasets/PXD012307/PXD012307.sdrf.tsv	
+ok	datasets/PXD012431/PXD012431.sdrf.tsv	
+ok	datasets/PXD012593/PXD012593-rat.sdrf.tsv	
+ok	datasets/PXD012593/PXD012593-srm.sdrf.tsv	
+ok	datasets/PXD012611/PXD012611.sdrf.tsv	
+ok	datasets/PXD012636/PXD012636.sdrf.tsv	
+ok	datasets/PXD012708/PXD012708.sdrf.tsv	
+ok	datasets/PXD012710/PXD012710.sdrf.tsv	
+ok	datasets/PXD012755/PXD012755.sdrf.tsv	
+ok	datasets/PXD012759/PXD012759.sdrf.tsv	
+ok	datasets/PXD012764/PXD012764.sdrf.tsv	
+ok	datasets/PXD012923/PXD012923.sdrf.tsv	
+ok	datasets/PXD012981/PXD012981.sdrf.tsv	
+ok	datasets/PXD012986/PXD012986.sdrf.tsv	
+ok	datasets/PXD013234/PXD013234.sdrf.tsv	
+ok	datasets/PXD013523/PXD013523.sdrf.tsv	
+ok	datasets/PXD013610/PXD013610.sdrf.tsv	
+ok	datasets/PXD013737/PXD013737.sdrf.tsv	
+ok	datasets/PXD013753/PXD013753.sdrf.tsv	
+ok	datasets/PXD013765/PXD013765.sdrf.tsv	
+ok	datasets/PXD013868/PXD013868-phospho.sdrf.tsv	
+ok	datasets/PXD013868/PXD013868-sec.sdrf.tsv	
+ok	datasets/PXD013868/PXD013868-seed-chase.sdrf.tsv	
+ok	datasets/PXD013868/PXD013868.sdrf.tsv	
+ok	datasets/PXD013923/PXD013923.sdrf.tsv	
+ok	datasets/PXD014032/PXD014032-aba.sdrf.tsv	
+ok	datasets/PXD014032/PXD014032.sdrf.tsv	
+ok	datasets/PXD014058/PXD014058.sdrf.tsv	
+ok	datasets/PXD014145/PXD014145.sdrf.tsv	
+ok	datasets/PXD014210/PXD014210.dda.sdrf.tsv	
+ok	datasets/PXD014256/PXD014256.sdrf.tsv	
+ok	datasets/PXD014458/PXD14458.sdrf.tsv	
+ok	datasets/PXD014502/PXD014502.sdrf.tsv	
+ok	datasets/PXD014525/PXD014525-dda.sdrf.tsv	
+ok	datasets/PXD014525/PXD014525-dia.sdrf.tsv	
+ok	datasets/PXD014528/PXD014528.sdrf.tsv	
+ok	datasets/PXD014557/PXD014557.sdrf.tsv	
+ok	datasets/PXD014565/PXD014565.sdrf.tsv	
+ok	datasets/PXD014618/PXD014618.sdrf.tsv	
+ok	datasets/PXD014675/PXD014675.sdrf.tsv	
+ok	datasets/PXD014849/PXD014849.sdrf.tsv	
+ok	datasets/PXD014871/PXD014871.sdrf.tsv	
+ok	datasets/PXD014877/PXD014877-drosophila.sdrf.tsv	
+ok	datasets/PXD014877/PXD014877-vertebrates.sdrf.tsv	
+ok	datasets/PXD015093/PXD015093-LFQ.sdrf.tsv	
+ok	datasets/PXD015093/PXD015093-TMT.sdrf.tsv	
+ok	datasets/PXD015268/PXD015268.sdrf.tsv	
+ok	datasets/PXD015270/PXD015270.sdrf.tsv	
+ok	datasets/PXD015422/PXD015422-DIA.sdrf.tsv	
+ok	datasets/PXD015578/PXD015578.sdrf.tsv	
+ok	datasets/PXD015744/PXD015744.sdrf.tsv	
+ok	datasets/PXD015809/PXD015809.sdrf.tsv	
+ok	datasets/PXD015833/PXD015833-Exp1.sdrf.tsv	
+ok	datasets/PXD015833/PXD015833-Exp2.sdrf.tsv	
+ok	datasets/PXD015833/PXD015833-Exp3.sdrf.tsv	
+ok	datasets/PXD015833/PXD015833-Exp4.sdrf.tsv	
+ok	datasets/PXD015833/PXD015833-Exp5.sdrf.tsv	
+ok	datasets/PXD015833/PXD015833-Exp6.sdrf.tsv	
+ok	datasets/PXD015957/PXD015957.sdrf.tsv	
+ok	datasets/PXD016001/PXD016001.sdrf.tsv	
+ok	datasets/PXD016002/PXD016002.sdrf.tsv	
+ok	datasets/PXD016074/PXD016074.sdrf.tsv	
+ok	datasets/PXD016204/PXD016204.sdrf.tsv	
+ok	datasets/PXD016336/PXD016336.sdrf.tsv	
+ok	datasets/PXD016662/PXD016662-dia-phospho.sdrf.tsv	
+ok	datasets/PXD016662/PXD016662-dia.sdrf.tsv	
+ok	datasets/PXD016669/PXD016669.sdrf.tsv	
+ok	datasets/PXD016772/PXD016772.sdrf.tsv	
+ok	datasets/PXD016837/PXD016837.sdrf.tsv	
+ok	datasets/PXD016921/PXD016921.sdrf.tsv	
+ok	datasets/PXD017035/PXD017035.sdrf.tsv	
+ok	datasets/PXD017199/PXD017199.sdrf.tsv	
+ok	datasets/PXD017201/PXD017201.sdrf.tsv	
+ok	datasets/PXD017291/PXD017291-mixed-label.sdrf.tsv	
+ok	datasets/PXD017291/PXD017291-tmt.sdrf.tsv	
+ok	datasets/PXD017602/PXD017602.sdrf.tsv	
+ok	datasets/PXD017710/PXD017710-silac.sdrf.tsv	
+ok	datasets/PXD017710/PXD017710-tmt.sdrf.tsv	
+ok	datasets/PXD018117/PXD018117.sdrf.tsv	
+ok	datasets/PXD018241/PXD018241-phosphoproteomics.sdrf.tsv	
+ok	datasets/PXD018241/PXD018241.sdrf.tsv	
+ok	datasets/PXD018357/PXD018357.sdrf.tsv	
+ok	datasets/PXD018581/PXD018581.sdrf.tsv	
+ok	datasets/PXD018594/PXD018594.sdrf.tsv	
+ok	datasets/PXD018678/PXD018678-dda.sdrf.tsv	
+ok	datasets/PXD018678/PXD018678-dia.sdrf.tsv	
+ok	datasets/PXD018814/PXD018814-phospho.sdrf.tsv	
+ok	datasets/PXD018814/PXD018814.sdrf.tsv	
+ok	datasets/PXD018830/PXD018830-DIA.sdrf.tsv	
+ok	datasets/PXD018970/PXD018970.sdrf.tsv	
+ok	datasets/PXD019101/PXD019101.sdrf.tsv	
+ok	datasets/PXD019113/PXD019113.sdrf.tsv	
+ok	datasets/PXD019123/PXD019123.sdrf.tsv	
+ok	datasets/PXD019140/PXD019140.sdrf.tsv	
+ok	datasets/PXD019185_PXD018883/PXD019185_PXD018883.sdrf.tsv	
+ok	datasets/PXD019288/PXD019288.sdrf.tsv	
+ok	datasets/PXD019291/PXD019291.sdrf.tsv	
+ok	datasets/PXD019394/PXD019394-expression.sdrf.tsv	
+ok	datasets/PXD019394/PXD019394-phosphorylation.sdrf.tsv	
+ok	datasets/PXD019515/PXD019515.sdrf.tsv	
+ok	datasets/PXD019643/PXD019643-HLA-II.sdrf.tsv	
+ok	datasets/PXD020187/PXD020187.sdrf.tsv	
+ok	datasets/PXD020192/PXD020192.sdrf.tsv	
+ok	datasets/PXD020207/PXD020207.sdrf.tsv	
+ok	datasets/PXD020286/PXD020286.sdrf.tsv	
+ok	datasets/PXD020381/PXD020381.sdrf.tsv	
+ok	datasets/PXD020383/PXD020383.sdrf.tsv	
+ok	datasets/PXD020394/PXD020394.sdrf.tsv	
+ok	datasets/PXD020508/PXD020508.sdrf.tsv	
+ok	datasets/PXD020563/PXD020563-DIA.sdrf.tsv	
+ok	datasets/PXD020586/PXD020586.sdrf.tsv	
+ok	datasets/PXD020785/PXD020785.sdrf.tsv	
+ok	datasets/PXD020863/PXD020863.sdrf.tsv	
+ok	datasets/PXD021713/PXD021713-DIA.sdrf.tsv	
+ok	datasets/PXD021874/PXD021874.sdrf.tsv	
+ok	datasets/PXD021882/PXD021882.sdrf.tsv	
+ok	datasets/PXD022070/PXD022070.sdrf.tsv	
+ok	datasets/PXD022526/PXD022526.sdrf.tsv	
+ok	datasets/PXD022725/PXD022725.sdrf.tsv	
+ok	datasets/PXD022791/PXD022791.sdrf.tsv	
+ok	datasets/PXD023158/PXD023158.sdrf.tsv	
+ok	datasets/PXD023217/PXD023217-human-gut.sdrf.tsv	
+ok	datasets/PXD023217/PXD023217-sihumix.sdrf.tsv	
+ok	datasets/PXD023366/PXD023366.sdrf.tsv	
+ok	datasets/PXD023650/PXD023650.sdrf.tsv	
+ok	datasets/PXD023707/PXD023707.sdrf.tsv	
+ok	datasets/PXD023801/PXD023801.sdrf.tsv	
+ok	datasets/PXD024043/PXD024043.sdrf.tsv	
+ok	datasets/PXD024138/PXD024138.sdrf.tsv	
+ok	datasets/PXD025088/PXD025088.sdrf.tsv	
+ok	datasets/PXD025387/PXD025387.sdrf.tsv	
+ok	datasets/PXD025481/PXD025481.sdrf.tsv	
+ok	datasets/PXD025706/PXD025706.sdrf.tsv	
+ok	datasets/PXD025939/PXD025939.sdrf.tsv	
+ok	datasets/PXD026474/PXD026474.sdrf.tsv	
+ok	datasets/PXD026649/PXD026649.sdrf.tsv	
+ok	datasets/PXD026703/PXD026703.sdrf.tsv	
+ok	datasets/PXD026814/PXD026814.sdrf.tsv	
+ok	datasets/PXD026824/PXD026824.sdrf.tsv	
+ok	datasets/PXD027241/PXD027241.sdrf.tsv	
+ok	datasets/PXD027296/PXD027296.sdrf.tsv	
+ok	datasets/PXD027573/PXD027573.sdrf.tsv	
+ok	datasets/PXD027637/PXD027637.sdrf.tsv	
+ok	datasets/PXD027648/PXD027648.sdrf.tsv	
+ok	datasets/PXD027669/PXD027669.sdrf.tsv	
+ok	datasets/PXD027813/PXD027813.sdrf.tsv	
+ok	datasets/PXD028348/PXD028348.sdrf.tsv	
+ok	datasets/PXD028735/PXD028735.sdrf.tsv	
+ok	datasets/PXD028979/PXD028979-phospho.sdrf.tsv	
+ok	datasets/PXD028979/PXD028979.sdrf.tsv	
+ok	datasets/PXD029009/PXD029009-DIA.sdrf.tsv	
+ok	datasets/PXD029347/PXD029347.sdrf.tsv	
+ok	datasets/PXD029818/PXD029818.sdrf.tsv	
+ok	datasets/PXD029949/PXD029949.sdrf.tsv	
+ok	datasets/PXD030304/PXD030304.sdrf.tsv	
+ok	datasets/PXD030345/PXD030345.sdrf.tsv	
+ok	datasets/PXD030346/PXD030346.sdrf.tsv	
+ok	datasets/PXD030598/PXD030598-DIA.sdrf.tsv	
+ok	datasets/PXD030607/PXD030607.sdrf.tsv	
+ok	datasets/PXD030650/PXD030650.sdrf.tsv	
+ok	datasets/PXD030690/PXD030690.sdrf.tsv	
+ok	datasets/PXD030983/PXD030983-pdac-phosphoproteome.sdrf.tsv	
+ok	datasets/PXD030983/PXD030983-pdac-proteome.sdrf.tsv	
+ok	datasets/PXD030983/PXD030983-tissues-phosphoproteome.sdrf.tsv	
+ok	datasets/PXD030983/PXD030983-tissues-proteome.sdrf.tsv	
+ok	datasets/PXD031485/PXD031485.sdrf.tsv	
+ok	datasets/PXD031694/PXD031694.sdrf.tsv	
+ok	datasets/PXD031887/PXD031887.sdrf.tsv	
+ok	datasets/PXD031919/PXD031919.sdrf.tsv	
+ok	datasets/PXD031955/PXD031955.sdrf.tsv	
+ok	datasets/PXD032270/PXD032270.sdrf.tsv	
+ok	datasets/PXD032691/PXD032691.sdrf.tsv	
+ok	datasets/PXD032893/PXD032893.sdrf.tsv	
+ok	datasets/PXD033749/PXD033749.sdrf.tsv	
+ok	datasets/PXD033778/PXD033778-liver.sdrf.tsv	
+ok	datasets/PXD033871/PXD033871.sdrf.tsv	
+ok	datasets/PXD034128/PXD034128.sdrf.tsv	
+ok	datasets/PXD034143/PXD034143.sdrf.tsv	
+ok	datasets/PXD034623/PXD034623.sdrf.tsv	
+ok	datasets/PXD035552/PXD035552.sdrf.tsv	
+ok	datasets/PXD035579/PXD035579.mrm.sdrf.tsv	
+ok	datasets/PXD035590/PXD035590.sdrf.tsv	
+ok	datasets/PXD036023/PXD036023.sdrf.tsv	
+ok	datasets/PXD036074/PXD036074-DIA.sdrf.tsv	
+ok	datasets/PXD036259/PXD036259.sdrf.tsv	
+ok	datasets/PXD036609/PXD036609-DIA.sdrf.tsv	
+ok	datasets/PXD036718/PXD036718-DIA.sdrf.tsv	
+ok	datasets/PXD036749/PXD036749.sdrf.tsv	
+ok	datasets/PXD036819/PXD036819.sdrf.tsv	
+ok	datasets/PXD036881/PXD036881.sdrf.tsv	
+ok	datasets/PXD037167/PXD037167.sdrf.tsv	
+ok	datasets/PXD037221/PXD037221.sdrf.tsv	
+ok	datasets/PXD037344/PXD037344.sdrf.tsv	
+ok	datasets/PXD037527/PXD037527.sdrf.tsv	
+ok	datasets/PXD037997/PXD037997.sdrf.tsv	
+ok	datasets/PXD038699/PXD038699.sdrf.tsv	
+ok	datasets/PXD038835/PXD038835.sdrf.tsv	
+ok	datasets/PXD039582/PXD039582.sdrf.tsv	
+ok	datasets/PXD039927/PXD039927.sdrf.tsv	
+ok	datasets/PXD039990/PXD039990.sdrf.tsv	
+ok	datasets/PXD040167/PXD040167.sdrf.tsv	
+ok	datasets/PXD040230/PXD040230.sdrf.tsv	
+ok	datasets/PXD040247/PXD040247.sdrf.tsv	
+ok	datasets/PXD040285/PXD040285.sdrf.tsv	
+ok	datasets/PXD040358/PXD040358.sdrf.tsv	
+ok	datasets/PXD040455/PXD040455.sdrf.tsv	
+ok	datasets/PXD040462/PXD040462.sdrf.tsv	
+ok	datasets/PXD040621/PXD040621.sdrf.tsv	
+ok	datasets/PXD041036/PXD041036.sdrf.tsv	
+ok	datasets/PXD041165/PXD041165.sdrf.tsv	
+ok	datasets/PXD041301/PXD041301.sdrf.tsv	
+ok	datasets/PXD041400/PXD041400.sdrf.tsv	
+ok	datasets/PXD041421/PXD041421.sdrf.tsv	
+ok	datasets/PXD041879/PXD041879.sdrf.tsv	
+ok	datasets/PXD042173/PXD042173.sdrf.tsv	
+ok	datasets/PXD042729/PXD042729.sdrf.tsv	
+ok	datasets/PXD042770/PXD042770.sdrf.tsv	
+ok	datasets/PXD043218/PXD043218.sdrf.tsv	
+ok	datasets/PXD043355/PXD043355.sdrf.tsv	
+ok	datasets/PXD043403/PXD043403.sdrf.tsv	
+ok	datasets/PXD044060/PXD044060.sdrf.tsv	
+ok	datasets/PXD044236/PXD044236.sdrf.tsv	
+ok	datasets/PXD044405/PXD044405.sdrf.tsv	
+ok	datasets/PXD044533/PXD044533.sdrf.tsv	
+ok	datasets/PXD044741/PXD044741.sdrf.tsv	
+ok	datasets/PXD044768/PXD044768-dda.sdrf.tsv	
+ok	datasets/PXD044768/PXD044768-swath.sdrf.tsv	
+ok	datasets/PXD044798/PXD044798.sdrf.tsv	
+ok	datasets/PXD044986/PXD044986.sdrf.tsv	
+ok	datasets/PXD045084/PXD045084.sdrf.tsv	
+ok	datasets/PXD045388/PXD045388.sdrf.tsv	
+ok	datasets/PXD045535/PXD045535.sdrf.tsv	
+ok	datasets/PXD045614/PXD045614.sdrf.tsv	
+ok	datasets/PXD046281/PXD046281.sdrf.tsv	
+ok	datasets/PXD046983/PXD046983.sdrf.tsv	
+ok	datasets/PXD047280/PXD047280.sdrf.tsv	
+ok	datasets/PXD048093/PXD048093.sdrf.tsv	
+ok	datasets/PXD049181/PXD049181.sdrf.tsv	
+ok	datasets/PXD049211/PXD049211.sdrf.tsv	
+ok	datasets/PXD049224/PXD049224.sdrf.tsv	
+ok	datasets/PXD049412/PXD049412.sdrf.tsv	
+ok	datasets/PXD049692/PXD049692.sdrf.tsv	
+ok	datasets/PXD050008/PXD050008.sdrf.tsv	
+ok	datasets/PXD050358/PXD050358.sdrf.tsv	
+ok	datasets/PXD050553/PXD050553.sdrf.tsv	
+ok	datasets/PXD050661/PXD050661.sdrf.tsv	
+ok	datasets/PXD051006/PXD051006.sdrf.tsv	
+ok	datasets/PXD051007/PXD051007.sdrf.tsv	
+ok	datasets/PXD051008/PXD051008.sdrf.tsv	
+ok	datasets/PXD051009/PXD051009.sdrf.tsv	
+ok	datasets/PXD051889/PXD051889.sdrf.tsv	
+ok	datasets/PXD051942/PXD051942.sdrf.tsv	
+ok	datasets/PXD052066/PXD052066.sdrf.tsv	
+ok	datasets/PXD052416/PXD052416.sdrf.tsv	
+ok	datasets/PXD052932/PXD052932.sdrf.tsv	
+ok	datasets/PXD053023/PXD053023.sdrf.tsv	
+ok	datasets/PXD053053/PXD053053.sdrf.tsv	
+ok	datasets/PXD053491/PXD053491.sdrf.tsv	
+ok	datasets/PXD053930/PXD053930.sdrf.tsv	
+ok	datasets/PXD054066/PXD054066.sdrf.tsv	
+ok	datasets/PXD054083/PXD054083.sdrf.tsv	
+ok	datasets/PXD054113/PXD054113.sdrf.tsv	
+ok	datasets/PXD054445/PXD054445.sdrf.tsv	
+ok	datasets/PXD054561/PXD054561.sdrf.tsv	
+ok	datasets/PXD055160/PXD055160.sdrf.tsv	
+ok	datasets/PXD055837/PXD055837.sdrf.tsv	
+ok	datasets/PXD055869/PXD055869.sdrf.tsv	
+ok	datasets/PXD055915/PXD055915.sdrf.tsv	
+ok	datasets/PXD056037/PXD056037.sdrf.tsv	
+ok	datasets/PXD056255/PXD056255.sdrf.tsv	
+ok	datasets/PXD056327/PXD056327.sdrf.tsv	
+ok	datasets/PXD056661/PXD056661.sdrf.tsv	
+ok	datasets/PXD058143/PXD058143.sdrf.tsv	
+ok	datasets/PXD058271/PXD058271.sdrf.tsv	
+ok	datasets/PXD058436/PXD058436.sdrf.tsv	
+ok	datasets/PXD058465/PXD058465.sdrf.tsv	
+ok	datasets/PXD058753/PXD058753.sdrf.tsv	
+ok	datasets/PXD058808/PXD058808.sdrf.tsv	
+ok	datasets/PXD058977/PXD058977.sdrf.tsv	
+ok	datasets/PXD059079/PXD059079.sdrf.tsv	
+ok	datasets/PXD059240/PXD059240.sdrf.tsv	
+ok	datasets/PXD059419/PXD059419.sdrf.tsv	
+ok	datasets/PXD059631/PXD059631.sdrf.tsv	
+ok	datasets/PXD059974/PXD059974.sdrf.tsv	
+ok	datasets/PXD060055/PXD060055.sdrf.tsv	
+ok	datasets/PXD060109/PXD060109.sdrf.tsv	
+ok	datasets/PXD060259/PXD060259.sdrf.tsv	
+ok	datasets/PXD061065/PXD061065.sdrf.tsv	
+ok	datasets/PXD061081/PXD061081.sdrf.tsv	
+ok	datasets/PXD061092/PXD061092.sdrf.tsv	
+ok	datasets/PXD061467/PXD061467.sdrf.tsv	
+ok	datasets/PXD061609/PXD061609.sdrf.tsv	
+ok	datasets/PXD062231/PXD062231.sdrf.tsv	
+ok	datasets/PXD062562/PXD062562.sdrf.tsv	
+ok	datasets/PXD062685/PXD062685.sdrf.tsv	
+ok	datasets/PXD062702/PXD062702.sdrf.tsv	
+ok	datasets/PXD063590/PXD063590.sdrf.tsv	
+ok	datasets/PXD063670/PXD063670.sdrf.tsv	
+ok	datasets/PXD063718/PXD063718.sdrf.tsv	
+ok	datasets/PXD064049/PXD064049.sdrf.tsv	
+ok	datasets/PXD064499/PXD064499.sdrf.tsv	
+ok	datasets/PXD064534/PXD064534.sdrf.tsv	
+ok	datasets/PXD064539/PXD064539.sdrf.tsv	
+ok	datasets/PXD064583/PXD064583.sdrf.tsv	
+ok	datasets/PXD064689/PXD064689.sdrf.tsv	
+ok	datasets/PXD065010/PXD065010.sdrf.tsv	
+ok	datasets/PXD065274/PXD065274.sdrf.tsv	
+ok	datasets/PXD065321/PXD065321.sdrf.tsv	
+ok	datasets/PXD065495/PXD065495.sdrf.tsv	
+ok	datasets/PXD066108/PXD066108.sdrf.tsv	
+ok	datasets/PXD066496/PXD066496.sdrf.tsv	
+ok	datasets/PXD066627/PXD066627.sdrf.tsv	
+ok	datasets/PXD066637/PXD066637.sdrf.tsv	
+ok	datasets/PXD066724/PXD066724.sdrf.tsv	
+ok	datasets/PXD066779/PXD066779.sdrf.tsv	
+ok	datasets/PXD067019/PXD067019.sdrf.tsv	
+ok	datasets/PXD067382/PXD067382.sdrf.tsv	
+ok	datasets/PXD067623/PXD067623.sdrf.tsv	
+ok	datasets/PXD068411/PXD068411.sdrf.tsv	
+ok	datasets/PXD068793/PXD068793.sdrf.tsv	
+ok	datasets/PXD068894/PXD068894.sdrf.tsv	
+ok	datasets/PXD068927/PXD068927.sdrf.tsv	
+ok	datasets/PXD069335/PXD069335.sdrf.tsv	
+ok	datasets/PXD069823/PXD069823.sdrf.tsv	
+ok	datasets/PXD069898/PXD069898.sdrf.tsv	
+ok	datasets/PXD069946/PXD069946.sdrf.tsv	
+ok	datasets/PXD069948/PXD069948.sdrf.tsv	
+ok	datasets/PXD070049/PXD070049.sdrf.tsv	
+ok	datasets/PXD070054/PXD070054.sdrf.tsv	
+ok	datasets/PXD070185/PXD070185.sdrf.tsv	
+ok	datasets/PXD070189/PXD070189.sdrf.tsv	
+ok	datasets/PXD070201/PXD070201.sdrf.tsv	
+ok	datasets/PXD070373/PXD070373.sdrf.tsv	
+ok	datasets/PXD070581/PXD070581.sdrf.tsv	
+ok	datasets/PXD070607/PXD070607.sdrf.tsv	
+ok	datasets/PXD070627/PXD070627.sdrf.tsv	
+ok	datasets/PXD070868/PXD070868.sdrf.tsv	
+ok	datasets/PXD071075/PXD071075.sdrf.tsv	
+ok	datasets/PXD071333/PXD071333.sdrf.tsv	
+ok	datasets/PXD071481/PXD071481.sdrf.tsv	
+ok	datasets/PXD071825/PXD071825.sdrf.tsv	
+ok	datasets/PXD072077/PXD072077.sdrf.tsv	
+ok	datasets/PXD072661/PXD072661.sdrf.tsv	
+ok	datasets/PXD072838/PXD072838.sdrf.tsv	
+ok	datasets/PXD072867/PXD072867.sdrf.tsv	
+ok	datasets/PXD072887/PXD072887.sdrf.tsv	
+ok	datasets/PXD073683/PXD073683.sdrf.tsv	
+ok	datasets/PXD073686/PXD073686.sdrf.tsv	
+ok	datasets/PXD073702/PXD073702.sdrf.tsv	
+ok	datasets/PXD074583/PXD074583.sdrf.tsv	
+ok	datasets/PXD074900/PXD074900.sdrf.tsv	
+ok	datasets/PXD075718/PXD075718.sdrf.tsv	
+ok	datasets/PXD075756/PXD075756.sdrf.tsv	
+ok	datasets/PXD075769/PXD075769.sdrf.tsv	
+ok	datasets/PXD075811/PXD075811.sdrf.tsv	
+ok	datasets/PXD078376/PXD078376.sdrf.tsv	
+ok	datasets/PXD078908/PXD078908.sdrf.tsv	
+ok	datasets/PXD079300/PXD079300.sdrf.tsv	
+ok	datasets/PXD080115/PXD080115.sdrf.tsv	
+ok	datasets/ProteoBench-Astral-Module7/ProteoBench-Astral-Module7.sdrf.tsv	

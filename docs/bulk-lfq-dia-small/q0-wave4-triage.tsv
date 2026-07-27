@@ -1,0 +1,21 @@
+id	deposited_file	classification	n_rows	n_columns	n_raw_expected	row_match	has_source_name	has_assay_name	has_data_file	has_template_declaration	missing_core_columns	action
+PXD023801	sdrf.tsv	full	7	17	7	yes	yes	yes	yes	no	technology type;comment[technical replicate];comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD035035	SDRF.tsv	full	9	20	9	yes	yes	yes	yes	no	comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD035553	sdrf-default_OOM_220510_TurnoID.tsv	full	9	11	9	yes	yes	yes	yes	no	technology type;comment[technical replicate];comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD039014	sdrf-vertebrates.tsv	full	8	13	8	yes	yes	yes	yes	no	comment[fraction identifier];comment[technical replicate];comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD044798	sdrf-pea.tsv	full	8	14	8	yes	yes	yes	yes	no	technology type;comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD058271	sdrf.tsv	full	9	35	9	yes	yes	yes	yes	no	comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD058977	sdrf.tsv	full	8	30	8	yes	yes	yes	yes	no	comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD061092	sdrf-stem-cells.tsv	full	9	18	9	yes	yes	yes	yes	no	technology type;comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD061467	2025-02-28-sdrf-human.sdrf.txt	full	8	19	8	yes	yes	yes	yes	no	comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD065010	sdrf.tsv	full	9	36	9	yes	yes	yes	yes	no	comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD068411	sdrf.txt	full	8	22	8	yes	yes	yes	yes	no	comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD070054	Sonter_SDRF.tsv	full	9	23	9	yes	yes	yes	yes	no	comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD074506	SDRF.txt	full	8	6	8	yes	yes	yes	yes	no	technology type;comment[fraction identifier];comment[technical replicate];comment[instrument];comment[label];comment[sdrf version]	validate with parse_sdrf, then sdrf-improve for required columns
+PXD070838	SDRF.tsv	legacy-case	6	15	6	yes	yes	yes	yes	no	technology type;comment[data file];comment[fraction identifier];comment[technical replicate];comment[sdrf version]	lowercase headers, map Comment[Raw File] to comment[data file], then validate
+PXD062176	sdrf.tsv	partial-technical	6	11	6	yes	no	no	yes	no	source name;characteristics[organism];assay name;technology type;comment[sdrf version]	author the sample section from PRIDE and the publication, then validate
+PXD073840	sdrf.tsv	partial-technical	6	11	6	yes	no	no	yes	no	source name;characteristics[organism];assay name;technology type;comment[sdrf version]	author the sample section from PRIDE and the publication, then validate
+PXD037850	SDRF_Ah_Gut_rohu.txt	not-sdrf	8	1	8	yes	no	no	no	no		demote to Q1 or Q2; the deposited file is not an SDRF
+PXD060698	SDRF_FP_ABPP.txt	not-sdrf	9	5	9	yes	no	no	no	no		demote to Q1 or Q2; the deposited file is not an SDRF
+PXD063229	SDRF.xlsx	not-sdrf	165	1	9	no	no	no	no	no		demote to Q1 or Q2; the deposited file is not an SDRF
+PXD074721	SDRF.xlsx	not-sdrf	174	1	6	no	no	no	no	no		demote to Q1 or Q2; the deposited file is not an SDRF

@@ -1,0 +1,8 @@
+PXD070838	ERROR: Required column 'characteristics[organism part]' is missing from the SDRF file
+PXD039014	ERROR: Empty value found Row: 1, Column: comment[data file], Source: N1
+PXD044798	ERROR: Term: Pisum sativum in column 'characteristics[organism]', is not found in the given ontology list ncbitaxon
+PXD074506	missing columns: comment[instrument]
+PXD035035	ERROR: Required column 'comment[cleavage agent details]' is missing from the SDRF file
+PXD035553	ERROR: Column 'comment[data file]' contains 'not applicable' values but requires actual values
+PXD065010	ERROR: Value '400m/z – 2000m/z' does not match required pattern
+PXD070054	ERROR: Term: Apis mellifera in column 'characteristics[organism]', is not found in the given ontology list ncbitaxon

@@ -1,0 +1,13 @@
+PXD070838	missing comment[cleavage agent details] (incomplete deposit)
+PXD039014	empty comment[data file] (incomplete deposit)
+PXD044798	Pisum sativum OLS/ncbitaxon lookup failure
+PXD074506	missing comment[instrument]
+PXD035035	missing comment[cleavage agent details]
+PXD035553	comment[data file]=not applicable
+PXD065010	ms1 scan range format rejected
+PXD062176	partial-technical (skipped)
+PXD073840	partial-technical (skipped)
+PXD037850	not-sdrf (skipped)
+PXD060698	not-sdrf (skipped)
+PXD063229	not-sdrf / xlsx (skipped)
+PXD074721	not-sdrf / xlsx (skipped)
