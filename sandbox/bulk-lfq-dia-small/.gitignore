@@ -1,5 +1,0 @@
-# Screening working area: PRIDE API responses and downloaded deposited SDRFs.
-# Regenerate with scripts/bulk_screen.py and scripts/q0_triage.py.
-cache/
-deposited/
-normalized/
