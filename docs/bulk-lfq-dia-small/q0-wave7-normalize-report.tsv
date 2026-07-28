@@ -1,7 +1,0 @@
-id	normalized	templates	n_rows
-PXD029913	sandbox/bulk-lfq-dia-small/normalized/PXD029913.sdrf.tsv	ms-proteomics;dia-acquisition	21
-PXD057643	sandbox/bulk-lfq-dia-small/normalized/PXD057643.sdrf.tsv	ms-proteomics;dia-acquisition	24
-PXD050661	sandbox/bulk-lfq-dia-small/normalized/PXD050661.sdrf.tsv	ms-proteomics;vertebrates;dia-acquisition	25
-PXD033871	sandbox/bulk-lfq-dia-small/normalized/PXD033871.sdrf.tsv	ms-proteomics;human;dia-acquisition	30
-PXD040358	sandbox/bulk-lfq-dia-small/normalized/PXD040358.sdrf.tsv	ms-proteomics;vertebrates;dia-acquisition	34
-PXD058169	sandbox/bulk-lfq-dia-small/normalized/PXD058169.sdrf.tsv	ms-proteomics;vertebrates;dia-acquisition	36

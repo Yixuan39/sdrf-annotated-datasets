@@ -1,3 +1,0 @@
-PXD029913	duplicate source×assay×label
-PXD057643	missing comment[data file], comment[instrument]
-PXD058169	invalid phenotype/lysate factor values

@@ -1,4 +1,0 @@
-PXD070838	ERROR: Required column 'comment[cleavage agent details]' is missing from the SDRF file
-PXD065010	ERROR: Value '400 TO 2000' does not match required pattern
-PXD044798	ERROR: Term: Pisum sativum in column 'characteristics[organism]', is not found in the given ontology list ncbitaxon
-PXD035035	ERROR: Required column 'comment[cleavage agent details]' is missing from the SDRF file
