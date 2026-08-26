@@ -14,17 +14,17 @@ The SDRF specification lives in [`bigbio/proteomics-sample-metadata`](https://gi
 <!-- STATS:START -->
 ## Resource at a glance
 
-_Auto-generated from curated `datasets/` on 2026-08-21T21:32:46Z. Sandbox drafts are excluded._
+_Auto-generated from curated `datasets/` on 2026-08-26T07:20:35Z. Sandbox drafts are excluded._
 
 | Metric | Count |
 | --- | ---: |
-| Accessions | 2,190 |
-| SDRF files | 2,331 |
-| Samples (unique `source name` per file) | 104,216 |
-| Runs (unique `comment[data file]` per file) | 154,259 |
-| Assay rows | 216,921 |
+| Accessions | 6,092 |
+| SDRF files | 6,233 |
+| Samples (unique `source name` per file) | 142,574 |
+| Runs (unique `comment[data file]` per file) | 192,707 |
+| Assay rows | 255,379 |
 
-**Highlights:** most common organism is **Homo sapiens**; **36,312** DIA assay rows; **63,038** TMT and **140,069** LFQ assay rows.
+**Highlights:** most common organism is **Homo sapiens**; **40,506** DIA assay rows; **63,050** TMT and **178,515** LFQ assay rows.
 
 ![Organisms](docs/stats/plots/organisms.png)
 
