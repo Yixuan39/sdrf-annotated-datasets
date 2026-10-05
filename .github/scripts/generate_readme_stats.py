@@ -128,6 +128,9 @@ TECHNOLOGY_TEMPLATES = {
     "ms-metabolomics",
 }
 
+# Gemini CLI was renamed Antigravity; one category covers both.
+GEMINI_LABEL = "Gemini/Antigravity"
+
 AGENT_EMAILS = {
     "cursoragent@cursor.com": "Cursor",
     "noreply@anthropic.com": "Claude",
@@ -144,7 +147,7 @@ AGENT_NAME_PATTERNS = (
     (re.compile(r"sdrf annotator", re.I), "SDRF Annotator"),
     (re.compile(r"\bcodex\b", re.I), "Codex"),
     (re.compile(r"chatgpt", re.I), "ChatGPT"),
-    (re.compile(r"gemini", re.I), "Gemini"),
+    (re.compile(r"gemini(?![- ]code[- ]assist)|antigravity", re.I), GEMINI_LABEL),
 )
 
 HUMAN_NAME_ALIASES = {
@@ -202,6 +205,15 @@ _AGENT_TEXT_PATTERNS = (
             re.I,
         ),
         "Codex",
+    ),
+    (
+        re.compile(
+            r"(?:generated|made) with \[?(?:google )?"
+            r"(?:gemini(?![- ]code[- ]assist)|antigravity)|"
+            r"co-authored-by:\s*(?:google )?(?:gemini(?![- ]code[- ]assist)|antigravity)",
+            re.I,
+        ),
+        GEMINI_LABEL,
     ),
 )
 
@@ -267,6 +279,8 @@ _BRANCH_PREFIX_AGENTS = (
     ("codex/", "Codex"),
     ("cursor/", "Cursor"),
     ("copilot/", "Copilot"),
+    ("gemini/", GEMINI_LABEL),
+    ("antigravity/", GEMINI_LABEL),
 )
 _REVIEW_BOT_LOGINS = {
     "copilot-pull-request-reviewer",
@@ -842,13 +856,13 @@ def _agent_from_login(login: str) -> str | None:
 
 
 def _agent_from_branch(ref: str) -> str | None:
-    """OpenAI Codex / Cursor / Copilot PR branches (codex/..., cursor/..., copilot/...)."""
+    """Agent PR branches (codex/..., cursor/..., copilot/..., gemini/..., antigravity/...)."""
     name = (ref or "").strip().lower()
     name = name.split(":")[-1]
     if name.startswith("origin/"):
         name = name[len("origin/") :]
     parts = [p for p in name.split("/") if p]
-    if len(parts) >= 2 and parts[0] not in {"codex", "cursor", "copilot"}:
+    if len(parts) >= 2 and parts[0] not in {"codex", "cursor", "copilot", "gemini", "antigravity"}:
         name = "/".join(parts[1:])
     for prefix, label in _BRANCH_PREFIX_AGENTS:
         if name.startswith(prefix):
@@ -2752,7 +2766,7 @@ AGENT_COLORS = {
     "SDRF Annotator": "#1A7F7A",
     "ChatGPT": "#10A37F",
     "Codex": "#3D8B5C",
-    "Gemini": "#4285F4",
+    GEMINI_LABEL: "#4285F4",
     "Unidentified": "#8A93A3",
 }
 
