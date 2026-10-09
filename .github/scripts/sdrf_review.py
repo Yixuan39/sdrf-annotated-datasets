@@ -155,6 +155,8 @@ def _baseline_path(baseline, f):
 DROPPED_RUNS_BLOCK = 0.9
 DROPPED_RUNS_ADVISE = 0.25
 ARCHIVES = (".zip", ".tar", ".tar.gz", ".tgz", ".gz", ".7z", ".rar")
+# Tables, checksums and search results that some SDRFs list as data files; none is an MS run.
+NON_RUNS = (".txt", ".tsv", ".csv", ".xlsx", ".msf")
 
 
 def run_stems(folder):
@@ -163,7 +165,8 @@ def run_stems(folder):
     The stem drops the extension so re-pointing a run (.mzML -> .raw) is not a lost run,
     and the whole folder counts so splitting one SDRF into several (per instrument) is not.
     An archive (.zip, .tar.gz, ...) holds runs rather than being one, so replacing it with
-    the runs inside it is not a lost run either.
+    the runs inside it is not a lost run either. A table, checksum or search result is not
+    a run, so dropping its row is not a lost run.
     """
     stems = set()
     for f in sorted(Path(folder).glob("*.sdrf*")):
@@ -178,7 +181,7 @@ def run_stems(folder):
             r = ln.split("\t")
             for i in idx:
                 v = r[i].strip() if i < len(r) else ""
-                if v and v.lower() not in SENTINELS and not v.lower().endswith(ARCHIVES):
+                if v and v.lower() not in SENTINELS and not v.lower().endswith(ARCHIVES + NON_RUNS):
                     stems.add(Path(v).stem.lower())
     return stems
 
